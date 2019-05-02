@@ -1,13 +1,13 @@
-package com.example.socialfacebook;
+package com.example;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SocialFacebookApplication {
+public class SocialApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SocialFacebookApplication.class, args);
+        SpringApplication.run(SocialApplication.class, args);
     }
 
 }
