@@ -1,0 +1,25 @@
+<html xmlns:th="www.thymeleaf.org">
+<head>
+    <!-- Bootstrap core CSS -->
+    <link th:href="@{/css/bootstrap.css}" rel="stylesheet"/>
+    <title>Spring Boot Facebook Application</title>
+</head>
+
+<body>
+<!-- Page Content -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h1 class="mt-5">Connect to Facebook:</h1>
+            <p class="lead">By clicking connect, you will be asked to authorize the application.</p>
+
+            <form action="/connect/facebook" method="POST">
+                <input type="hidden" name="scope" value="user_posts"/>
+
+                <button class="btn btn-default" type="submit">Connect</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
