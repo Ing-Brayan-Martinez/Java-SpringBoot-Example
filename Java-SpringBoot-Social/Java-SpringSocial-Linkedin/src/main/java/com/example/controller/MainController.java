@@ -1,9 +1,5 @@
 package com.example.controller;
 
-import org.springframework.social.facebook.api.Facebook;
-import org.springframework.social.facebook.api.PagedList;
-import org.springframework.social.facebook.api.Post;
-import org.springframework.social.facebook.api.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

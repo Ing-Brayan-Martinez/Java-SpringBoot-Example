@@ -1,0 +1,25 @@
+<html xmlns:th="www.thymeleaf.org">
+
+<head>
+    <!-- Bootstrap core CSS -->
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet"/>
+    <title>Spring Boot Facebook Application</title>
+</head>
+<body>
+<div class="container">
+
+    <h3 class="mt-5">Welcome, <span th:text="${userProfile.name}"></span>!</h3>
+
+    <h4 class="mt-5">Facebook Feed:</h4>
+    <div class="row">
+        <div class="col-lg-12 text-center" th:each="post:${userFeed}" style="border:1px">
+            <b class="lead" th:text="${post.from.name}">from</b> posted:
+            <p class="lead" th:text="${post.message}">message text</p>
+            <img th:if="${post.picture}" th:src="${post.picture}" class="img-thumbnail"/>
+            <hr>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
