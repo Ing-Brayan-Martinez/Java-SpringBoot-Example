@@ -2,7 +2,7 @@
 <h1 align="center">Comenzando con SpringBoot</h1>
 
 <h1 align="center">
-  <img src="https://github.com/Ing-Brayan-Martinez/Java-SpringBoot-Demo/blob/master/docs/spring-ecosystem-750x410.jpg" alt="Dart React Redux Demo" width="800"/>
+  <img src="https://github.com/Ing-Brayan-Martinez/Java-SpringBoot-Example/blob/master/docs/spring-ecosystem-750x410.jpg" alt="SpringBoot" width="800"/>
 </h1>
 
 [![Build Status](https://travis-ci.org/leerob/dart-react-todo.svg?branch=master)](https://travis-ci.org/leerob/dart-react-todo)
@@ -22,17 +22,16 @@ con el patron de arquitectura hexagonal y con integracion para enviar correos el
 - [Inicio rápido](#inicio-rápido)
 - [Que es Spring?](#que-es-spring)
 - [Que es la arquitectura hexagonal?](#que-es-la-arquitectura-hexagonal)
-- [Que es RabbitMQ?](#que-es-rabbitmq)
 - [Referencias](#referencias)
 
 ### Inicio rápido
 
 ```bash
-$ git clone https://github.com/Ing-Brayan-Martinez/Java-SpringBoot-Demo.git
-$ cd Java-SpringBoot-Demo
+$ git clone https://github.com/Ing-Brayan-Martinez/Java-SpringBoot-Example.git
+$ cd Java-SpringBoot-Example/Java-SpringBoot-Data/Java-SpringBoot-JPA
 $ mvn install
 $ cd target
-$ java -jar Java-SpringBoot-Demo.jar
+$ java -jar Java-SpringBoot-JPA.jar
 ```
 
 Abra http://localhost:8080/ para ver la aplicación.
