@@ -1,0 +1,26 @@
+<link rel="import" href="../../../vaadin-material-styles/color.html">
+<link rel="import" href="../../../vaadin-material-styles/shadow.html">
+<link rel="import" href="../../../vaadin-material-styles/typography.html">
+
+
+<dom-module id="material-app-layout" theme-for="vaadin-app-layout">
+  <template>
+    <style>
+      :host {
+        background-color: var(--material-background-color);
+      }
+
+      [part="navbar"] {
+        background: var(--vaadin-app-layout-navbar-background, var(--material-secondary-background-color));
+        box-shadow: var(--material-shadow-elevation-8dp);
+      }
+
+      @media (min-width: 700px) {
+        [part="navbar"] {
+          padding: 0 1em;
+          box-shadow: var(--material-shadow-elevation-4dp);
+        }
+      }
+    </style>
+  </template>
+</dom-module>

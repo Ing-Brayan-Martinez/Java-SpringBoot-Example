@@ -1,0 +1,53 @@
+<link rel="import" href="../../../vaadin-lumo-styles/color.html">
+<link rel="import" href="../../../vaadin-lumo-styles/sizing.html">
+<link rel="import" href="../../../vaadin-lumo-styles/spacing.html">
+<link rel="import" href="../../../vaadin-lumo-styles/typography.html">
+<link rel="import" href="../../../vaadin-lumo-styles/mixins/required-field.html">
+
+<dom-module id="lumo-custom-field" theme-for="vaadin-custom-field">
+  <template>
+    <style include="lumo-required-field">
+      :host {
+        color: var(--lumo-body-text-color);
+        font-size: var(--lumo-font-size-m);
+        font-family: var(--lumo-font-family);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-tap-highlight-color: transparent;
+        padding: 0;
+      }
+
+      :host::before {
+        margin-top: calc((0.8em + var(--lumo-space-xs) * 3.5) * -1);
+        box-sizing: border-box;
+        display: inline-flex;
+        align-items: center;
+      }
+
+      :host([has-label]) {
+        padding-top: calc(var(--lumo-space-s) + var(--lumo-space-xs));
+      }
+
+      :host([has-label]) [part="label"] {
+        top: var(--lumo-space-xs);
+      }
+
+      :host([has-label][invalid])::before {
+        margin-top: calc(var(--lumo-space-xs) * -1.5);
+      }
+
+      :host(:not([has-label])) [part="label"] {
+        display: none;
+      }
+
+      /* align with text-field error message */
+      :host([invalid]) [part="error-message"]:not(:empty)::before {
+        height: calc(0.4em - var(--lumo-space-xs));
+      }
+
+      :host([invalid]) [part="error-message"]:not(:empty)::after {
+        height: calc(0.4em + var(--lumo-space-xs));
+      }
+    </style>
+  </template>
+</dom-module>
