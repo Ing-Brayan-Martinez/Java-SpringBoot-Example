@@ -40,7 +40,7 @@ public class UserController {
     }
 
     @RequestMapping("/toEdit")
-    public String toEdit(Model model,Long id) {
+    public String toEdit(Model model, Long id) {
         User user=userService.findUserById(id);
         model.addAttribute("user", user);
         return "user/userEdit";
