@@ -17,7 +17,7 @@
 package com.example.infraestructure.util;
 
 public interface Valores {
-    final int CERO = 0;
+    final long CERO = 0;
     final int UNO = 1;
     final String ACTIVO = "A";
 }

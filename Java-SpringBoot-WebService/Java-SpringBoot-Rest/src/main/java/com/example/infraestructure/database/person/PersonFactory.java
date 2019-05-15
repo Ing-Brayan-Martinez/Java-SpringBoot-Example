@@ -1,6 +1,6 @@
 package com.example.infraestructure.database.person;
 
-import com.example.aplication.person.PersonCommand;
+import com.example.infraestructure.otros.PersonCommand;
 import com.example.domain.person.Person;
 import com.example.domain.person.PersonFactoryInterface;
 import com.example.infraestructure.util.Valores;
@@ -24,6 +24,7 @@ public class PersonFactory implements PersonFactoryInterface {
         try {
             final SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
             final Date fechaNacimiento2   = new Date(format.parse(command.getFechaNacimiento()).getTime());
+
             person = new Person(
                 Valores.CERO,
                 command.getNombre(),

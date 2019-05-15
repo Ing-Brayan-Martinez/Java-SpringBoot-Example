@@ -1,6 +1,6 @@
 package com.example.infraestructure.database.children;
 
-import com.example.aplication.children.ChildrenCommand;
+import com.example.infraestructure.otros.ChildrenCommand;
 import com.example.domain.children.Children;
 import com.example.domain.children.ChildrenFactoryInterface;
 import org.apache.log4j.Logger;

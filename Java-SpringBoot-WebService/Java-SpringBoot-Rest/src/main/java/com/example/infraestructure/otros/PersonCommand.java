@@ -13,30 +13,27 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.domain.person;
+package com.example.infraestructure.otros;
 
 
 
-import java.io.Serializable;
 import java.sql.Date;
-import java.util.Objects;
 
-
-public class Person implements Serializable {
-
-    private Long key;
+@Deprecated
+public class PersonCommand {
+    
+    private String key;
     private String nombre;
     private String apellido;
-    private Date fechaNacimiento;
+    private String fechaNacimiento;
     private String cedula;
-    private Float altura;
+    private String altura;
     private String telefono;
     private String correo;
     private Date fechaRegistro;
     private Date fechaModificacion;
 
-    public Person(Long key, String nombre, String apellido, Date fechaNacimiento, String cedula, Float altura,
-                  String telefono, String correo, Date fechaRegistro, Date fechaModificacion) {
+    public PersonCommand(String key, String nombre, String apellido, String fechaNacimiento, String cedula, String altura, String telefono, String correo, Date fechaRegistro, Date fechaModificacion) {
         this.key = key;
         this.nombre = nombre;
         this.apellido = apellido;
@@ -49,15 +46,15 @@ public class Person implements Serializable {
         this.fechaModificacion = fechaModificacion;
     }
 
-    public Person() {
+    public PersonCommand() {
 
     }
 
-    public Long getKey() {
+    public String getKey() {
         return key;
     }
 
-    public void setKey(Long key) {
+    public void setKey(String key) {
         this.key = key;
     }
 
@@ -77,11 +74,11 @@ public class Person implements Serializable {
         this.apellido = apellido;
     }
 
-    public Date getFechaNacimiento() {
+    public String getFechaNacimiento() {
         return fechaNacimiento;
     }
 
-    public void setFechaNacimiento(Date fechaNacimiento) {
+    public void setFechaNacimiento(String fechaNacimiento) {
         this.fechaNacimiento = fechaNacimiento;
     }
 
@@ -93,11 +90,11 @@ public class Person implements Serializable {
         this.cedula = cedula;
     }
 
-    public Float getAltura() {
+    public String getAltura() {
         return altura;
     }
 
-    public void setAltura(Float altura) {
+    public void setAltura(String altura) {
         this.altura = altura;
     }
 
@@ -133,28 +130,6 @@ public class Person implements Serializable {
         this.fechaModificacion = fechaModificacion;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Person person = (Person) o;
-        return Objects.equals(key, person.key) &&
-        Objects.equals(nombre, person.nombre) &&
-        Objects.equals(apellido, person.apellido) &&
-        Objects.equals(fechaNacimiento, person.fechaNacimiento) &&
-        Objects.equals(cedula, person.cedula) &&
-        Objects.equals(altura, person.altura) &&
-        Objects.equals(telefono, person.telefono) &&
-        Objects.equals(correo, person.correo) &&
-        Objects.equals(fechaRegistro, person.fechaRegistro) &&
-        Objects.equals(fechaModificacion, person.fechaModificacion);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(key, nombre, apellido, fechaNacimiento, cedula,
-        altura, telefono, correo, fechaRegistro, fechaModificacion);
-    }
 
     @Override
     public String toString() {

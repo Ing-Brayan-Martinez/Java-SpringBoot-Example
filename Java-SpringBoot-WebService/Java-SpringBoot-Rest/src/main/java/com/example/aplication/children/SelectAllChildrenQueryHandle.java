@@ -3,6 +3,7 @@ package com.example.aplication.children;
 import com.example.aplication.QueryHandleInterface;
 import com.example.domain.children.Children;
 import com.example.infraestructure.database.children.ChildrenRepository;
+import com.example.infraestructure.otros.ChildrenQuery;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

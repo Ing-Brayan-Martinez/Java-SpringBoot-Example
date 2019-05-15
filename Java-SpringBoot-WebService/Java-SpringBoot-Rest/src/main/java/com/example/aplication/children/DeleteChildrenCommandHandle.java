@@ -7,17 +7,14 @@ import org.springframework.stereotype.Component;
 
 
 @Component
-public class DeleteChildrenCommandHandle implements CommandHandleInterface<String> {
+public class DeleteChildrenCommandHandle implements CommandHandleInterface<Long> {
 
     @Autowired
     private ChildrenRepository repository;
 
 
     @Override
-    public void handle(String command) {
-
-        final int key = Integer.valueOf(command);
+    public void handle(Long key) {
         this.repository.eliminar(key);
-
     }
 }

@@ -2,7 +2,6 @@ package com.example.infraestructure.database.person;
 
 import com.example.domain.person.Person;
 import com.example.domain.person.PersonReposytoryInterface;
-import com.example.infraestructure.database.Conexion;
 import org.apache.log4j.Logger;
 
 import java.sql.PreparedStatement;
@@ -10,8 +9,11 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import javax.sql.DataSource;
 
 
 @Repository
@@ -19,8 +21,9 @@ public class PersonRepository implements PersonReposytoryInterface {
 
     //Atributos constantes.
     private final Logger log = Logger.getLogger(PersonRepository.class);
-    private final Conexion conn = Conexion.getInstance();
 
+    @Autowired
+    private DataSource conn;
 
     //Atributos.
     private volatile PreparedStatement ps;
@@ -34,7 +37,7 @@ public class PersonRepository implements PersonReposytoryInterface {
     @Override
     public void insert(Person data) {
 
-        final String SQL_INSERT = "INSERT INTO persona (nombre, apellido, fechaNacimiento, cedula, altura, telefono, " +
+        final String SQL_INSERT = "INSERT INTO person (nombre, apellido, fechaNacimiento, cedula, altura, telefono, " +
                 "correo, fechaRegistro, fechaModificacion) VALUES(?,?,?,?,?,?,?,?,?);";
 
         try {
@@ -57,7 +60,6 @@ public class PersonRepository implements PersonReposytoryInterface {
             this.log.error(ex.getMessage());
 
         } finally {
-            this.conn.close();
             this.log.info("Se ha insertado una persona");
 
         }
@@ -72,8 +74,8 @@ public class PersonRepository implements PersonReposytoryInterface {
     @Override
     public void update(Person data) {
 
-        final String SQL_UPDATE = "UPDATE persona SET nombre = ?, apellido = ?, fechaNacimiento = ?, cedula = ?, altura" +
-                " = ?, telefono = ?, correo = ?, fechaModificacion = ? WHERE persona.key = ?;";
+        final String SQL_UPDATE = "UPDATE person SET nombre = ?, apellido = ?, fechaNacimiento = ?, cedula = ?, altura" +
+                " = ?, telefono = ?, correo = ?, fechaModificacion = ? WHERE person.key = ?;";
 
         try {
             this.ps = this.conn.getConnection().prepareStatement(SQL_UPDATE);
@@ -85,7 +87,7 @@ public class PersonRepository implements PersonReposytoryInterface {
             this.ps.setString (6,  data.getTelefono());
             this.ps.setString (7,  data.getCorreo());
             this.ps.setObject (8,  data.getFechaModificacion());
-            this.ps.setInt    (9, data.getKey());
+            this.ps.setLong   (9, data.getKey());
 
 
             this.ps.executeUpdate();
@@ -95,7 +97,6 @@ public class PersonRepository implements PersonReposytoryInterface {
             this.log.error(ex.getMessage());
 
         } finally {
-            this.conn.close();
             this.log.info("Se ha actualisado una persona");
 
         }
@@ -108,13 +109,13 @@ public class PersonRepository implements PersonReposytoryInterface {
      * @param key Clave primaria de la person a delete.
      */
     @Override
-    public void delete(int key) {
+    public void delete(long key) {
 
-        final String SQL_DELETE = "DELETE FROM persona WHERE persona.key = ?;";
+        final String SQL_DELETE = "DELETE FROM person WHERE person.key = ?;";
 
         try {
             this.ps = this.conn.getConnection().prepareStatement(SQL_DELETE);
-            this.ps.setInt(1, key);
+            this.ps.setLong(1, key);
             this.ps.executeUpdate() ;
 
 
@@ -122,7 +123,6 @@ public class PersonRepository implements PersonReposytoryInterface {
             this.log.error(ex.getMessage());
 
         } finally {
-            this.conn.close();
             this.log.info("Se ha eliminado una persona");
 
         }
@@ -136,19 +136,19 @@ public class PersonRepository implements PersonReposytoryInterface {
      * @return Resultado de la consulta.
      */
     @Override
-    public synchronized Person select(int key) {
+    public synchronized Person select(long key) {
 
-        final String SQL_SELECT = "SELECT * FROM persona WHERE persona.key = ?;";
+        final String SQL_SELECT = "SELECT * FROM person WHERE person.key = ?;";
 
         try {
             this.ps = this.conn.getConnection().prepareStatement(SQL_SELECT);
-            this.ps.setInt(1, key);
+            this.ps.setLong(1, key);
             this.res = this.ps.executeQuery();
 
 
             while (this.res.next()) {
                 this.dto = new Person(
-                        this.res.getInt(1),
+                        this.res.getLong(1),
                         this.res.getString(2),
                         this.res.getString(3),
                         this.res.getDate(4),
@@ -166,7 +166,6 @@ public class PersonRepository implements PersonReposytoryInterface {
             this.log.error(ex.getMessage());
 
         } finally {
-            this.conn.close();
             this.log.info("Se ha consultado una persona");
 
         }
@@ -181,7 +180,7 @@ public class PersonRepository implements PersonReposytoryInterface {
     @Override
     public synchronized List<Person> selectAll() {
 
-        final String SQL_SELECT_ALL = "SELECT * FROM persona;";
+        final String SQL_SELECT_ALL = "SELECT * FROM person;";
         final List<Person> list  = new ArrayList<>();
 
         try {
@@ -190,7 +189,7 @@ public class PersonRepository implements PersonReposytoryInterface {
 
             while (this.res.next()) {
                 list.add(new Person(
-                        this.res.getInt(1),
+                        this.res.getLong(1),
                         this.res.getString(2),
                         this.res.getString(3),
                         this.res.getDate(4),
@@ -208,7 +207,6 @@ public class PersonRepository implements PersonReposytoryInterface {
             this.log.error(ex.getMessage());
 
         } finally {
-            this.conn.close();
             this.log.info("Se ha consultado todas las personas");
 
         }

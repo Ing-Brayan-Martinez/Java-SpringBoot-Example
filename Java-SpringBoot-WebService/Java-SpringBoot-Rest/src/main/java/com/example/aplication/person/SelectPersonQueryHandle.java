@@ -8,17 +8,14 @@ import org.springframework.stereotype.Component;
 
 
 @Component
-public class SelectPersonQueryHandle implements QueryHandleInterface<PersonQuery, Person> {
+public class SelectPersonQueryHandle implements QueryHandleInterface<Long, Person> {
 
     @Autowired
     private PersonRepository repository;
 
-
     @Override
-    public Person handle(PersonQuery query) {
-
-        final int key = Integer.valueOf(query.getId());
-
+    public Person handle(Long key) {
         return this.repository.select(key);
     }
+
 }

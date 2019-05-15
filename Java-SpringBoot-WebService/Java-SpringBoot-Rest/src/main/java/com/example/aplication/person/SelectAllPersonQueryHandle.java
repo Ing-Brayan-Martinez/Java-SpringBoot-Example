@@ -10,16 +10,14 @@ import java.util.List;
 
 
 @Component
-public class SelectAllPersonQueryHandle implements QueryHandleInterface<PersonQuery, List<Person>> {
+public class SelectAllPersonQueryHandle implements QueryHandleInterface<Long, List<Person>> {
 
     @Autowired
     private PersonRepository repository;
 
-
     @Override
-    public List<Person> handle(PersonQuery query) {
-
-        return this.repository.selectAll();
-
+    public List<Person> handle(Long key) {
+        List<Person> list = this.repository.selectAll();
+        return list;
     }
 }

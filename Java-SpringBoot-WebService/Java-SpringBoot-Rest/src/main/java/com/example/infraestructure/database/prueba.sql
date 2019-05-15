@@ -1,14 +1,14 @@
 -- Crear la base de datos. --
-CREATE DATABASE IF NOT EXISTS `Prueba` DEFAULT CHARACTER SET utf8 COLLATE utf8_spanish_ci;
+CREATE DATABASE IF NOT EXISTS `rest_person` DEFAULT CHARACTER SET utf8 COLLATE utf8_spanish_ci;
 
 
 -- Cargar la base de datos. --
-USE `Prueba`;
+USE `rest_person`;
 
 
 
 -- person --
-DROP TABLE IF EXISTS `Prueba`.`person`;
+DROP TABLE IF EXISTS `rest_person`.`person`;
 
 CREATE TABLE `person` (
     `key` int(11) NULL,
@@ -29,7 +29,7 @@ ALTER TABLE `person`
     MODIFY `key` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=0;
 
 -- children --
-DROP TABLE IF EXISTS `Prueba`.`children`;
+DROP TABLE IF EXISTS `rest_person`.`children`;
 
 CREATE TABLE `children` (
     `Key` int(11) NULL,

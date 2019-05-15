@@ -17,6 +17,8 @@
 package com.example.infraestructure.util;
 
 
+import java.sql.Date;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.ZoneId;
@@ -138,5 +140,16 @@ public class Util {
      */
     public static Float calcularPorcentaje(float num, float porce) {
         return num*porce/100;
+    }
+
+    public static Date toDate(String date) {
+        Date result = new Date(System.currentTimeMillis());
+        try {
+            final SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+            result   = new Date(format.parse(date).getTime());
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        return result;
     }
 }

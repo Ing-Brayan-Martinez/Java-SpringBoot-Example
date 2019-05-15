@@ -10,20 +10,13 @@ import org.springframework.stereotype.Component;
 
 
 @Component
-public class UpdatePersonCommandHandle implements CommandHandleInterface<PersonCommand> {
-
-    @Autowired
-    private PersonFactory factory;
+public class UpdatePersonCommandHandle implements CommandHandleInterface<Person> {
 
     @Autowired
     private PersonRepository repository;
 
-
     @Override
-    public void handle(PersonCommand command) {
-
-        final Person temp = this.factory.toPerson(command);
-
-        this.repository.update(temp);
+    public void handle(Person command) {
+        this.repository.update(command);
     }
 }

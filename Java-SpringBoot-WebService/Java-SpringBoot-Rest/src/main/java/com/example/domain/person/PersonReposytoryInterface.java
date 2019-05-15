@@ -8,9 +8,9 @@ public interface PersonReposytoryInterface {
 
     public void update(Person data);
 
-    public void delete(int key);
+    public void delete(long key);
 
-    public Person select(int key);
+    public Person select(long key);
 
     public List<Person> selectAll();
 }

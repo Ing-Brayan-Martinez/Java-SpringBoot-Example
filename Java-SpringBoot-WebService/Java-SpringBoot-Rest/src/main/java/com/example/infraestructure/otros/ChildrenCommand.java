@@ -1,29 +1,24 @@
 
-package com.example.domain.children;
+package com.example.infraestructure.otros;
 
-import java.io.Serializable;
 import java.sql.Date;
-import java.util.Objects;
 
-
-public class Children implements Serializable {
-
-    private long key;
+@Deprecated
+public class ChildrenCommand {
+        
+    private String key;
     private String nombre;
     private String apellido;
-    private Date fechaNacimiento;
+    private String fechaNacimiento;
     private String tipoSangre;
     private String documentoIdentidad;
-    private int KeyPersona;
+    private String KeyPersona;
     private Date fechaRegistro;
     private Date fechaModificacion;
 
-    public Children() {
 
-    }
 
-    public Children(long key, String nombre, String apellido, Date fechaNacimiento, String tipoSangre,
-                    String documentoIdentidad, int KeyPersona, Date fechaRegistro, Date fechaModificacion) {
+    public ChildrenCommand(String key, String nombre, String apellido, String fechaNacimiento, String tipoSangre, String documentoIdentidad, String KeyPersona, Date fechaRegistro, Date fechaModificacion) {
         this.key = key;
         this.nombre = nombre;
         this.apellido = apellido;
@@ -35,11 +30,11 @@ public class Children implements Serializable {
         this.fechaModificacion = fechaModificacion;
     }
 
-    public long getKey() {
+    public String getKey() {
         return key;
     }
 
-    public void setKey(long key) {
+    public void setKey(String key) {
         this.key = key;
     }
 
@@ -59,11 +54,11 @@ public class Children implements Serializable {
         this.apellido = apellido;
     }
 
-    public Date getFechaNacimiento() {
+    public String getFechaNacimiento() {
         return fechaNacimiento;
     }
 
-    public void setFechaNacimiento(Date fechaNacimiento) {
+    public void setFechaNacimiento(String fechaNacimiento) {
         this.fechaNacimiento = fechaNacimiento;
     }
 
@@ -83,11 +78,11 @@ public class Children implements Serializable {
         this.documentoIdentidad = documentoIdentidad;
     }
 
-    public int getKeyPersona() {
+    public String getKeyPersona() {
         return KeyPersona;
     }
 
-    public void setKeyPersona(int KeyPersona) {
+    public void setKeyPersona(String KeyPersona) {
         this.KeyPersona = KeyPersona;
     }
 
@@ -105,29 +100,6 @@ public class Children implements Serializable {
 
     public void setFechaModificacion(Date fechaModificacion) {
         this.fechaModificacion = fechaModificacion;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Children children = (Children) o;
-        return key == children.key &&
-        KeyPersona == children.KeyPersona &&
-        Objects.equals(nombre, children.nombre) &&
-        Objects.equals(apellido, children.apellido) &&
-        Objects.equals(fechaNacimiento, children.fechaNacimiento) &&
-        Objects.equals(tipoSangre, children.tipoSangre) &&
-        Objects.equals(documentoIdentidad, children.documentoIdentidad) &&
-        Objects.equals(fechaRegistro, children.fechaRegistro) &&
-        Objects.equals(fechaModificacion, children.fechaModificacion);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(key, nombre, apellido, fechaNacimiento,
-        tipoSangre, documentoIdentidad, KeyPersona, fechaRegistro,
-        fechaModificacion);
     }
 
     @Override

@@ -3,10 +3,11 @@ package com.example.infraestructure.database.children;
 
 import com.example.domain.children.Children;
 import com.example.domain.children.ChildrenReposytoryInterface;
-import com.example.infraestructure.database.Conexion;
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import javax.sql.DataSource;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -18,7 +19,9 @@ public class ChildrenRepository implements ChildrenReposytoryInterface {
     
     //Atributos constantes.
     private final Logger log = Logger.getLogger(ChildrenRepository.class);
-    private final Conexion conn = Conexion.getInstance();
+
+    @Autowired
+    private DataSource conn;
 
     //Atributos.
     private volatile PreparedStatement ps;
@@ -33,7 +36,8 @@ public class ChildrenRepository implements ChildrenReposytoryInterface {
     @Override
     public void insertar(Children data) {
          
-        final String SQL_INSERT = "INSERT INTO hijos (nombre, apellido, fechaNacimiento, tipoSangre, documentoIdentidad, KeyPersona, fechaRegistro, fechaModificacion) VALUES(?,?,?,?,?,?,?,?);";
+        final String SQL_INSERT = "INSERT INTO hijos (nombre, apellido, fechaNacimiento, tipoSangre, documentoIdentidad, " +
+        "KeyPersona, fechaRegistro, fechaModificacion) VALUES(?,?,?,?,?,?,?,?);";
         
         try {
             this.ps = this.conn.getConnection().prepareStatement(SQL_INSERT);
@@ -54,7 +58,6 @@ public class ChildrenRepository implements ChildrenReposytoryInterface {
             this.log.error(ex.getMessage());
 
         } finally {
-            this.conn.close();
             this.log.info("Se ha insertado un hijo");
 
         }
@@ -69,7 +72,8 @@ public class ChildrenRepository implements ChildrenReposytoryInterface {
     @Override
     public void actualizar(Children data) {
         
-        final String SQL_UPDATE = "UPDATE hijos SET nombre = ?, apellido = ?, fechaNacimiento = ?, tipoSangre = ?, documentoIdentidad = ?, KeyPersona = ?, fechaModificacion = ? WHERE hijos.key = ?;";
+        final String SQL_UPDATE = "UPDATE hijos SET nombre = ?, apellido = ?, fechaNacimiento = ?, tipoSangre = ?," +
+        " documentoIdentidad = ?, KeyPersona = ?, fechaModificacion = ? WHERE hijos.key = ?;";
        
         try {
             this.ps = this.conn.getConnection().prepareStatement(SQL_UPDATE);
@@ -80,7 +84,7 @@ public class ChildrenRepository implements ChildrenReposytoryInterface {
             this.ps.setString (5,  data.getDocumentoIdentidad());
             this.ps.setInt    (6,  data.getKeyPersona());
             this.ps.setDate   (7,  data.getFechaModificacion());
-            this.ps.setInt    (8,  data.getKey());
+            this.ps.setLong   (8,  data.getKey());
 
 
             this.ps.executeUpdate();
@@ -90,7 +94,6 @@ public class ChildrenRepository implements ChildrenReposytoryInterface {
             this.log.error(ex.getMessage());
 
         } finally {            
-            this.conn.close();
             this.log.info("Se ha actualisado un hijo");
 
         }
@@ -103,13 +106,13 @@ public class ChildrenRepository implements ChildrenReposytoryInterface {
      * @param key Clave primaria del hijo a delete.
      */
     @Override
-    public void eliminar(int key) {
+    public void eliminar(long key) {
         
         final String SQL_DELETE = "DELETE FROM hijos WHERE hijos.key = ?;";
         
         try {
             this.ps = this.conn.getConnection().prepareStatement(SQL_DELETE);
-            this.ps.setInt(1, key);
+            this.ps.setLong(1, key);
             this.ps.executeUpdate();
 
 
@@ -117,7 +120,6 @@ public class ChildrenRepository implements ChildrenReposytoryInterface {
             this.log.error(ex.getMessage());
 
         } finally {            
-            this.conn.close();
             this.log.info("Se ha eliminado un hijo");
 
         }
@@ -131,13 +133,13 @@ public class ChildrenRepository implements ChildrenReposytoryInterface {
      * @return Resultado de la consulta.
      */
     @Override
-    public synchronized Children consultar(int key) {
+    public synchronized Children consultar(long key) {
         
         final String SQL_SELECT = "SELECT * FROM hijos WHERE hijos.key = ?;";
        
         try {
             this.ps = this.conn.getConnection().prepareStatement(SQL_SELECT);
-            this.ps.setInt(1, key);
+            this.ps.setLong(1, key);
             this.res = this.ps.executeQuery();
 
 
@@ -160,7 +162,6 @@ public class ChildrenRepository implements ChildrenReposytoryInterface {
             this.log.error(ex.getMessage());
 
         } finally {
-            this.conn.close();
             this.log.info("Se ha consultado un hijo");
 
         }
@@ -202,7 +203,6 @@ public class ChildrenRepository implements ChildrenReposytoryInterface {
             this.log.error(ex.getMessage());
 
         } finally {
-            this.conn.close();
             this.log.info("Se ha consultado todos los hijos");
 
         }

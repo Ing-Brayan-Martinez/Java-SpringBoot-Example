@@ -9,9 +9,9 @@ public interface ChildrenReposytoryInterface {
 
     public void actualizar(Children data);
 
-    public void eliminar(int key);
+    public void eliminar(long key);
 
-    public Children consultar(int key);
+    public Children consultar(long key);
 
     public List<Children> consultarTodoList();
 }

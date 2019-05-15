@@ -1,6 +1,6 @@
 package com.example.domain.person;
 
-import com.example.aplication.person.PersonCommand;
+import com.example.infraestructure.otros.PersonCommand;
 
 public interface PersonFactoryInterface {
 

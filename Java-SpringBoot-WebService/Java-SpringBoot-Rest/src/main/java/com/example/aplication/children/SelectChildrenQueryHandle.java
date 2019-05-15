@@ -8,17 +8,14 @@ import org.springframework.stereotype.Component;
 
 
 @Component
-public class SelectChildrenQueryHandle implements QueryHandleInterface<ChildrenQuery, Children> {
+public class SelectChildrenQueryHandle implements QueryHandleInterface<Long, Children> {
 
     @Autowired
     private ChildrenRepository repository;
 
 
     @Override
-    public Children handle(ChildrenQuery query) {
-
-        final int key = Integer.valueOf(query.getId());
-
+    public Children handle(Long key) {
         return this.repository.consultar(key);
     }
 }
