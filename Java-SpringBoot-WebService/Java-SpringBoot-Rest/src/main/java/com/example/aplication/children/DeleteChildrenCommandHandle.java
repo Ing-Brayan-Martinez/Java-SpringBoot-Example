@@ -12,7 +12,6 @@ public class DeleteChildrenCommandHandle implements CommandHandleInterface<Long>
     @Autowired
     private ChildrenRepository repository;
 
-
     @Override
     public void handle(Long key) {
         this.repository.eliminar(key);

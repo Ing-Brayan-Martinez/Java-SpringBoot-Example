@@ -15,7 +15,8 @@ public class SelectPersonQueryHandle implements QueryHandleInterface<Long, Perso
 
     @Override
     public Person handle(Long key) {
-        return this.repository.select(key);
+        Person person = this.repository.select(key);
+        return person;
     }
 
 }

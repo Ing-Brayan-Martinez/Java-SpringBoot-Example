@@ -18,7 +18,7 @@ CREATE TABLE `person` (
     `cedula` varchar(12) NOT NULL,
     `altura` float NOT NULL,
     `telefono` varchar(12) NOT NULL,
-    `correo` varchar(250) NOT NULL,
+    `EMail` varchar(250) NOT NULL,
     `fechaRegistro` date NOT NULL,
     `fechaModificacion` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;

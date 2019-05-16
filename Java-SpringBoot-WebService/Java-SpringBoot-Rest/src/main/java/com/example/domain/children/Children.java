@@ -8,6 +8,16 @@ import java.util.Objects;
 
 public class Children implements Serializable {
 
+    public static final String KEY = "key";
+    public static final String NOMBRE = "nombre";
+    public static final String APELLIDO = "apellido";
+    public static final String FECHA_NACIMIENTO = "fechaNacimiento";
+    public static final String TIPO_SANGRE = "tipoSangre";
+    public static final String DOCUMENTO_IDENTIDAD = "documentoIdentidad";
+    public static final String PERSONA = "KeyPersona";
+    public static final String FECHA_REGISTRO = "fechaRegistro";
+    public static final String FECHA_MODIFICACION = "fechaModificacion";
+
     private long key;
     private String nombre;
     private String apellido;
@@ -39,72 +49,36 @@ public class Children implements Serializable {
         return key;
     }
 
-    public void setKey(long key) {
-        this.key = key;
-    }
-
     public String getNombre() {
         return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
     }
 
     public String getApellido() {
         return apellido;
     }
 
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
-    }
-
     public Date getFechaNacimiento() {
         return fechaNacimiento;
-    }
-
-    public void setFechaNacimiento(Date fechaNacimiento) {
-        this.fechaNacimiento = fechaNacimiento;
     }
 
     public String getTipoSangre() {
         return tipoSangre;
     }
 
-    public void setTipoSangre(String tipoSangre) {
-        this.tipoSangre = tipoSangre;
-    }
-
     public String getDocumentoIdentidad() {
         return documentoIdentidad;
-    }
-
-    public void setDocumentoIdentidad(String documentoIdentidad) {
-        this.documentoIdentidad = documentoIdentidad;
     }
 
     public int getKeyPersona() {
         return KeyPersona;
     }
 
-    public void setKeyPersona(int KeyPersona) {
-        this.KeyPersona = KeyPersona;
-    }
-
     public Date getFechaRegistro() {
         return fechaRegistro;
     }
 
-    public void setFechaRegistro(Date fechaRegistro) {
-        this.fechaRegistro = fechaRegistro;
-    }
-
     public Date getFechaModificacion() {
         return fechaModificacion;
-    }
-
-    public void setFechaModificacion(Date fechaModificacion) {
-        this.fechaModificacion = fechaModificacion;
     }
 
     @Override
@@ -143,5 +117,64 @@ public class Children implements Serializable {
                 ", fechaRegistro=" + fechaRegistro +
                 ", fechaModificacion=" + fechaModificacion +
                 '}';
+    }
+
+    public static class Builder {
+
+        private final Children object;
+
+        public Builder() {
+            object = new Children();
+        }
+
+        public Builder withKey(long value) {
+            object.key = value;
+            return this;
+        }
+
+        public Builder withNombre(String value) {
+            object.nombre = value;
+            return this;
+        }
+
+        public Builder withApellido(String value) {
+            object.nombre = value;
+            return this;
+        }
+
+        public Builder withFechaNacimiento(Date value) {
+            object.fechaNacimiento = value;
+            return this;
+        }
+
+        public Builder withTipoSangre(String value) {
+            object.tipoSangre = value;
+            return this;
+        }
+
+        public Builder withDocumentoIdentidad(String value) {
+            object.documentoIdentidad = value;
+            return this;
+        }
+
+
+        public Builder withKeyPersona(int value) {
+            object.KeyPersona = value;
+            return this;
+        }
+
+        public Builder withFechaRegistro(Date value) {
+            object.fechaRegistro = value;
+            return this;
+        }
+
+        public Builder withFechaModificacion(Date value) {
+            object.fechaModificacion = value;
+            return this;
+        }
+
+        public Children build() {
+            return object;
+        }
     }
 }

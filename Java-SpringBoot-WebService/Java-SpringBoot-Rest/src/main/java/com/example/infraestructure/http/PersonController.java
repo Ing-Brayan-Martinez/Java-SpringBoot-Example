@@ -2,6 +2,7 @@ package com.example.infraestructure.http;
 
 import com.example.aplication.person.*;
 import com.example.domain.person.Person;
+import com.example.infraestructure.util.Intent;
 import com.example.infraestructure.util.Util;
 import com.example.infraestructure.util.Valores;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,17 +43,17 @@ public class PersonController {
         @RequestParam(defaultValue = "correo") String correo
     ) {
 
-        final Person command = new Person();
-        command.setKey(Valores.CERO);
-        command.setNombre(nombre);
-        command.setApellido(apellido);
-        command.setFechaNacimiento(Util.toDate(fechaNacimiento));
-        command.setCedula(cedula);
-        command.setAltura(altura);
-        command.setTelefono(telefono);
-        command.setCorreo(correo);
-        command.setFechaRegistro(Util.geDate());
-        command.setFechaModificacion(Util.geDate());
+        final Intent command = new Intent();
+        command.putExtra(Person.KEY, Valores.CERO);
+        command.putExtra(Person.NOMBRE, nombre);
+        command.putExtra(Person.APELLIDO, apellido);
+        command.putExtra(Person.FECHA_NACIMIENTO, Util.toDate(fechaNacimiento));
+        command.putExtra(Person.CEDULA, cedula);
+        command.putExtra(Person.ALTURA, altura);
+        command.putExtra(Person.TELEFONO, telefono);
+        command.putExtra(Person.CORREO, correo);
+        command.putExtra(Person.FECHA_REGISTRO, Util.geDate());
+        command.putExtra(Person.FECHA_MODIFICACION, Util.geDate());
 
         create.handle(command);
     }
@@ -69,17 +70,17 @@ public class PersonController {
         @RequestParam(defaultValue = "correo") String correo
     ) {
 
-        final Person command = new Person();
-        command.setKey(key);
-        command.setNombre(nombre);
-        command.setApellido(apellido);
-        command.setFechaNacimiento(Util.toDate(fechaNacimiento));
-        command.setCedula(cedula);
-        command.setAltura(altura);
-        command.setTelefono(telefono);
-        command.setCorreo(correo);
-        command.setFechaRegistro(Util.geDate());
-        command.setFechaModificacion(Util.geDate());
+        final Intent command = new Intent();
+        command.putExtra(Person.KEY, Valores.CERO);
+        command.putExtra(Person.NOMBRE, nombre);
+        command.putExtra(Person.APELLIDO, apellido);
+        command.putExtra(Person.FECHA_NACIMIENTO, Util.toDate(fechaNacimiento));
+        command.putExtra(Person.CEDULA, cedula);
+        command.putExtra(Person.ALTURA, altura);
+        command.putExtra(Person.TELEFONO, telefono);
+        command.putExtra(Person.CORREO, correo);
+        command.putExtra(Person.FECHA_REGISTRO, Util.geDate());
+        command.putExtra(Person.FECHA_MODIFICACION, Util.geDate());
 
         update.handle(command);
     }

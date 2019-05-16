@@ -3,20 +3,26 @@ package com.example.aplication.children;
 
 import com.example.aplication.CommandHandleInterface;
 import com.example.domain.children.Children;
+import com.example.infraestructure.convert.children.ChildrenConverted;
 import com.example.infraestructure.database.children.ChildrenRepository;
+import com.example.infraestructure.util.Intent;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 
 
 @Component
-public class UpdateChildrenCommandHandle implements CommandHandleInterface<Children> {
+public class UpdateChildrenCommandHandle implements CommandHandleInterface<Intent> {
 
     @Autowired
     private ChildrenRepository repository;
 
+    @Autowired
+    private ChildrenConverted converted;
+
     @Override
-    public void handle(Children data) {
+    public void handle(Intent intent) {
+        Children data = this.converted.onConvert(intent);
         this.repository.actualizar(data);
     }
 }

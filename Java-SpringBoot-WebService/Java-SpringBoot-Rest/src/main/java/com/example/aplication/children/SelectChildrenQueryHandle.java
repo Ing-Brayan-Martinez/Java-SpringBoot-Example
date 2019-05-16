@@ -13,9 +13,9 @@ public class SelectChildrenQueryHandle implements QueryHandleInterface<Long, Chi
     @Autowired
     private ChildrenRepository repository;
 
-
     @Override
     public Children handle(Long key) {
-        return this.repository.consultar(key);
+        Children children = this.repository.consultar(key);
+        return children;
     }
 }

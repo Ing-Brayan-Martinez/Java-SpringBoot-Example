@@ -16,13 +16,23 @@
 package com.example.domain.person;
 
 
-
 import java.io.Serializable;
 import java.sql.Date;
 import java.util.Objects;
 
 
 public class Person implements Serializable {
+
+    public static final String KEY = "key";
+    public static final String NOMBRE = "nombre";
+    public static final String APELLIDO = "apellido";
+    public static final String FECHA_NACIMIENTO = "fechaNacimiento";
+    public static final String CEDULA = "cedula";
+    public static final String ALTURA = "altura";
+    public static final String TELEFONO = "telefono";
+    public static final String CORREO = "correo";
+    public static final String FECHA_REGISTRO = "fechaRegistro";
+    public static final String FECHA_MODIFICACION = "fechaModificacion";
 
     private Long key;
     private String nombre;
@@ -57,80 +67,40 @@ public class Person implements Serializable {
         return key;
     }
 
-    public void setKey(Long key) {
-        this.key = key;
-    }
-
     public String getNombre() {
         return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
     }
 
     public String getApellido() {
         return apellido;
     }
 
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
-    }
-
     public Date getFechaNacimiento() {
         return fechaNacimiento;
-    }
-
-    public void setFechaNacimiento(Date fechaNacimiento) {
-        this.fechaNacimiento = fechaNacimiento;
     }
 
     public String getCedula() {
         return cedula;
     }
 
-    public void setCedula(String cedula) {
-        this.cedula = cedula;
-    }
-
     public Float getAltura() {
         return altura;
-    }
-
-    public void setAltura(Float altura) {
-        this.altura = altura;
     }
 
     public String getTelefono() {
         return telefono;
     }
 
-    public void setTelefono(String telefono) {
-        this.telefono = telefono;
-    }
-
     public String getCorreo() {
         return correo;
-    }
-
-    public void setCorreo(String correo) {
-        this.correo = correo;
     }
 
     public Date getFechaRegistro() {
         return fechaRegistro;
     }
 
-    public void setFechaRegistro(Date fechaRegistro) {
-        this.fechaRegistro = fechaRegistro;
-    }
-
     public Date getFechaModificacion() {
         return fechaModificacion;
-    }
-
-    public void setFechaModificacion(Date fechaModificacion) {
-        this.fechaModificacion = fechaModificacion;
     }
 
     @Override
@@ -170,5 +140,69 @@ public class Person implements Serializable {
                 ", fechaRegistro=" + fechaRegistro +
                 ", fechaModificacion=" + fechaModificacion +
                 '}';
+    }
+
+    public static class Builder {
+
+        private final Person object;
+
+        public Builder() {
+            object = new Person();
+        }
+
+        public Builder withKey(long value) {
+            object.key = value;
+            return this;
+        }
+
+        public Builder withNombre(String value) {
+            object.nombre = value;
+            return this;
+        }
+
+        public Builder withApellido(String value) {
+            object.nombre = value;
+            return this;
+        }
+
+        public Builder withFechaNacimiento(Date value) {
+            object.fechaNacimiento = value;
+            return this;
+        }
+
+        public Builder withCedula(String value) {
+            object.cedula = value;
+            return this;
+        }
+
+        public Builder withAltura(Float value) {
+            object.altura = value;
+            return this;
+        }
+
+
+        public Builder withTelefono(String value) {
+            object.telefono = value;
+            return this;
+        }
+
+        public Builder withCorreo(String value) {
+            object.telefono = value;
+            return this;
+        }
+
+        public Builder withFechaRegistro(Date value) {
+            object.fechaRegistro = value;
+            return this;
+        }
+
+        public Builder withFechaModificacion(Date value) {
+            object.fechaModificacion = value;
+            return this;
+        }
+
+        public Person build() {
+            return object;
+        }
     }
 }

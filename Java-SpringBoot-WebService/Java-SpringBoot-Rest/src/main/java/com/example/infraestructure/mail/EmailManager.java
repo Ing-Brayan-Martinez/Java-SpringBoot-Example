@@ -1,6 +1,7 @@
 package com.example.infraestructure.mail;
 
 import org.apache.log4j.Logger;
+import org.springframework.stereotype.Component;
 
 import javax.mail.Message;
 import javax.mail.MessagingException;
@@ -17,6 +18,7 @@ import java.util.Properties;
  *
  * https://www.google.com/settings/security/lesssecureapps
  */
+@Component
 public class EmailManager {
 
     private final Logger log = Logger.getLogger(EmailManager.class);
@@ -26,7 +28,7 @@ public class EmailManager {
 
     private final String email = "brayanmartinez827@gmail.com";
     private final String emailPass = "";
-    private final String personal = "Mi firma de Correo";
+    private final String personal = "Mi firma de EMail";
 
 
 
@@ -49,16 +51,16 @@ public class EmailManager {
 
 
     /**
-     * Enviar el correo.
-     * @param correo El correo a enviar.
+     * Enviar el EMail.
+     * @param eMail El EMail a enviar.
      */
-    public void sendMessage(Correo correo) {
+    public void sendMessage(EMail eMail) {
         final MimeMessage message = new MimeMessage(session);
 
         try {
-            message.setRecipient(Message.RecipientType.TO, InternetAddress.parse(correo.getRecepient())[0]);
-            message.setContent(correo.getMsg(), "text/html; charset=utf-8");
-            message.setSubject(correo.getSubject());
+            message.setRecipient(Message.RecipientType.TO, InternetAddress.parse(eMail.getRecepient())[0]);
+            message.setContent(eMail.getMsg(), "text/html; charset=utf-8");
+            message.setSubject(eMail.getSubject());
             message.setFrom(new InternetAddress(email, personal));
 
             Transport.send(message);
@@ -70,7 +72,7 @@ public class EmailManager {
             this.log.error(ex.getMessage());
 
         } finally {
-            this.log.info("Se ha enviado un correo.");
+            this.log.info("Se ha enviado un EMail.");
 
         }
     }

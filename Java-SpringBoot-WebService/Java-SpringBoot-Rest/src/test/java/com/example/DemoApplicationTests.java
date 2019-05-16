@@ -25,7 +25,7 @@ public class DemoApplicationTests {
     private PersonRepository repository;
 
     @Test
-    public void givenTomcatConnectionPoolInstance_whenCheckedPoolClassName_thenCorrect() {
+    public void test() {
 
         try {
             System.out.println(dataSource.getConnection());

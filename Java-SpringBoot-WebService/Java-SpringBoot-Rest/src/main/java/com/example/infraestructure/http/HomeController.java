@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @EnableAutoConfiguration
-@CrossOrigin(origins = "http://localhost:9080")
+@CrossOrigin
 public class HomeController {
 
     private final static Logger logger = LoggerFactory.getLogger(HomeController.class);

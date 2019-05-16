@@ -2,7 +2,7 @@ package com.example.infraestructure.http;
 
 import com.example.aplication.children.*;
 import com.example.domain.children.Children;
-import com.example.infraestructure.otros.ChildrenQuery;
+import com.example.infraestructure.util.Intent;
 import com.example.infraestructure.util.Util;
 import com.example.infraestructure.util.Valores;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,16 +42,16 @@ public class ChildrenController {
         @RequestParam(defaultValue = "KeyPersona") Integer KeyPersona
     ) {
 
-        final Children command = new Children();
-        command.setKey(Valores.CERO);
-        command.setNombre(nombre);
-        command.setApellido(apellido);
-        command.setFechaNacimiento(Util.toDate(fechaNacimiento));
-        command.setTipoSangre(tipoSangre);
-        command.setDocumentoIdentidad(documentoIdentidad);
-        command.setKeyPersona(KeyPersona);
-        command.setFechaRegistro(Util.geDate());
-        command.setFechaModificacion(Util.geDate());
+        final Intent command = new Intent();
+        command.putExtra(Children.KEY, Valores.CERO);
+        command.putExtra(Children.NOMBRE, nombre);
+        command.putExtra(Children.APELLIDO, apellido);
+        command.putExtra(Children.FECHA_NACIMIENTO, Util.toDate(fechaNacimiento));
+        command.putExtra(Children.TIPO_SANGRE, tipoSangre);
+        command.putExtra(Children.DOCUMENTO_IDENTIDAD, documentoIdentidad);
+        command.putExtra(Children.PERSONA, KeyPersona);
+        command.putExtra(Children.FECHA_REGISTRO, Util.geDate());
+        command.putExtra(Children.FECHA_MODIFICACION, Util.geDate());
 
         create.handle(command);
     }
@@ -67,16 +67,16 @@ public class ChildrenController {
         @RequestParam(defaultValue = "KeyPersona") Integer KeyPersona
     ) {
 
-        final Children command = new Children();
-        command.setKey(key);
-        command.setNombre(nombre);
-        command.setApellido(apellido);
-        command.setFechaNacimiento(Util.toDate(fechaNacimiento));
-        command.setTipoSangre(tipoSangre);
-        command.setDocumentoIdentidad(documentoIdentidad);
-        command.setKeyPersona(KeyPersona);
-        command.setFechaRegistro(Util.geDate());
-        command.setFechaModificacion(Util.geDate());
+        final Intent command = new Intent();
+        command.putExtra(Children.KEY, key);
+        command.putExtra(Children.NOMBRE, nombre);
+        command.putExtra(Children.APELLIDO, apellido);
+        command.putExtra(Children.FECHA_NACIMIENTO, Util.toDate(fechaNacimiento));
+        command.putExtra(Children.TIPO_SANGRE, tipoSangre);
+        command.putExtra(Children.DOCUMENTO_IDENTIDAD, documentoIdentidad);
+        command.putExtra(Children.PERSONA, KeyPersona);
+        command.putExtra(Children.FECHA_REGISTRO, Util.geDate());
+        command.putExtra(Children.FECHA_MODIFICACION, Util.geDate());
 
         update.handle(command);
     }
@@ -88,7 +88,7 @@ public class ChildrenController {
 
     @GetMapping("/all")
     public List<Children> selectAllAction() {
-        return all.handle(ChildrenQuery.empty());
+        return all.handle(Valores.CERO);
     }
 
     @GetMapping("/all/by/id/{id}")

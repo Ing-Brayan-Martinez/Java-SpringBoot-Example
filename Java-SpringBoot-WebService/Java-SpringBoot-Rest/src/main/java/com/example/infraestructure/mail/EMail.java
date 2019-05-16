@@ -1,12 +1,12 @@
 package com.example.infraestructure.mail;
 
-public class Correo {
+public class EMail {
 
     private String msg;
     private String recepient;
     private String subject;
 
-    public Correo(String msg, String recepient, String subject) {
+    public EMail(String msg, String recepient, String subject) {
         this.msg = msg;
         this.recepient = recepient;
         this.subject = subject;
