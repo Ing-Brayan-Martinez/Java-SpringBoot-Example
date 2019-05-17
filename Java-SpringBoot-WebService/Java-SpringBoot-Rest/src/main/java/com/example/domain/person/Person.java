@@ -16,11 +16,13 @@
 package com.example.domain.person;
 
 
+import org.springframework.stereotype.Component;
+
 import java.io.Serializable;
 import java.sql.Date;
 import java.util.Objects;
 
-
+@Component
 public class Person implements Serializable {
 
     public static final String KEY = "key";
@@ -44,20 +46,6 @@ public class Person implements Serializable {
     private String correo;
     private Date fechaRegistro;
     private Date fechaModificacion;
-
-    public Person(Long key, String nombre, String apellido, Date fechaNacimiento, String cedula, Float altura,
-                  String telefono, String correo, Date fechaRegistro, Date fechaModificacion) {
-        this.key = key;
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.fechaNacimiento = fechaNacimiento;
-        this.cedula = cedula;
-        this.altura = altura;
-        this.telefono = telefono;
-        this.correo = correo;
-        this.fechaRegistro = fechaRegistro;
-        this.fechaModificacion = fechaModificacion;
-    }
 
     public Person() {
 
@@ -161,7 +149,7 @@ public class Person implements Serializable {
         }
 
         public Builder withApellido(String value) {
-            object.nombre = value;
+            object.apellido = value;
             return this;
         }
 
@@ -187,7 +175,7 @@ public class Person implements Serializable {
         }
 
         public Builder withCorreo(String value) {
-            object.telefono = value;
+            object.correo = value;
             return this;
         }
 

@@ -3,7 +3,9 @@ package com.example.infraestructure.database.children;
 
 import com.example.domain.children.Children;
 import com.example.domain.children.ChildrenReposytoryInterface;
-import org.apache.log4j.Logger;
+import com.example.infraestructure.database.person.PersonRepository;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -18,7 +20,7 @@ import java.util.List;
 public class ChildrenRepository implements ChildrenReposytoryInterface {
     
     //Atributos constantes.
-    private final Logger log = Logger.getLogger(ChildrenRepository.class);
+    private final static Logger log = LoggerFactory.getLogger(ChildrenRepository.class);
 
     @Autowired
     private DataSource conn;

@@ -3,7 +3,9 @@ package com.example.infraestructure.convert.children;
 import com.example.domain.children.Children;
 import com.example.domain.ConvertedInterface;
 import com.example.infraestructure.util.Intent;
-import org.apache.log4j.Logger;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import java.sql.Date;
@@ -11,7 +13,7 @@ import java.sql.Date;
 @Component
 public class ChildrenConverted implements ConvertedInterface<Children> {
 
-    private final Logger log = Logger.getLogger(ChildrenConverted.class);
+    private final static Logger log = LoggerFactory.getLogger(ChildrenConverted.class);
 
     @Override
     public Children onConvert(Intent command) {

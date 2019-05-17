@@ -1,10 +1,10 @@
 package com.example.infraestructure.convert.person;
 
 import com.example.domain.ConvertedInterface;
-import com.example.domain.children.Children;
 import com.example.domain.person.Person;
 import com.example.infraestructure.util.Intent;
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import java.sql.Date;
@@ -13,7 +13,7 @@ import java.sql.Date;
 @Component
 public class PersonConverted implements ConvertedInterface<Person> {
 
-    private final Logger log = Logger.getLogger(PersonConverted.class);
+    private final static Logger log = LoggerFactory.getLogger(PersonConverted.class);
 
     @Override
     public Person onConvert(Intent command) {

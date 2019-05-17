@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 
 
 @Component
-public class UpdatePersonCommandHandle implements CommandHandleInterface<Intent> {
+public class UpdatePersonCommandHandle implements CommandHandleInterface<Person> {
 
     @Autowired
     private PersonRepository repository;
@@ -20,8 +20,8 @@ public class UpdatePersonCommandHandle implements CommandHandleInterface<Intent>
     private PersonConverted converted;
 
     @Override
-    public void handle(Intent intent) {
-        Person person = this.converted.onConvert(intent);
+    public void handle(Person person) {
+        //Person person = this.converted.onConvert(intent);
         this.repository.update(person);
     }
 }

@@ -1,6 +1,7 @@
 package com.example.infraestructure.mail;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import javax.mail.Message;
@@ -21,7 +22,7 @@ import java.util.Properties;
 @Component
 public class EmailManager {
 
-    private final Logger log = Logger.getLogger(EmailManager.class);
+    private final static Logger log = LoggerFactory.getLogger(EmailManager.class);
 
     private final Session session;
     private final Properties props;

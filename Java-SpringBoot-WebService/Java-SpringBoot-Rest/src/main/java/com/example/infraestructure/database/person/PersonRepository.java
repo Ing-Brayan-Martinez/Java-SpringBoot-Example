@@ -2,25 +2,24 @@ package com.example.infraestructure.database.person;
 
 import com.example.domain.person.Person;
 import com.example.domain.person.PersonReposytoryInterface;
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
+import javax.sql.DataSource;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
-
-import javax.sql.DataSource;
-
 
 @Repository
 public class PersonRepository implements PersonReposytoryInterface {
 
     //Atributos constantes.
-    private final Logger log = Logger.getLogger(PersonRepository.class);
+    private final static Logger log = LoggerFactory.getLogger(PersonRepository.class);
 
     @Autowired
     private DataSource conn;
@@ -38,7 +37,7 @@ public class PersonRepository implements PersonReposytoryInterface {
     public void insert(Person data) {
 
         final String SQL_INSERT = "INSERT INTO person (nombre, apellido, fechaNacimiento, cedula, altura, telefono, " +
-                "correo, fechaRegistro, fechaModificacion) VALUES(?,?,?,?,?,?,?,?,?);";
+                "correo, fechaRegistro, fechaModificacion) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?);";
 
         try {
             this.ps = this.conn.getConnection().prepareStatement(SQL_INSERT);
@@ -57,10 +56,10 @@ public class PersonRepository implements PersonReposytoryInterface {
 
 
         } catch (SQLException ex) {
-            this.log.error(ex.getMessage());
+            log.error(ex.getMessage());
 
         } finally {
-            this.log.info("Se ha insertado una persona");
+            log.info("Se ha insertado una persona");
 
         }
 
@@ -74,30 +73,29 @@ public class PersonRepository implements PersonReposytoryInterface {
     @Override
     public void update(Person data) {
 
-        final String SQL_UPDATE = "UPDATE person SET nombre = ?, apellido = ?, fechaNacimiento = ?, cedula = ?, altura" +
-                " = ?, telefono = ?, correo = ?, fechaModificacion = ? WHERE person.key = ?;";
+        final String SQL_UPDATE = "UPDATE person SET nombre = ?, apellido = ?, fechaNacimiento = ?, cedula = ?, " +
+        "altura = ?, telefono = ?, correo = ?, fechaModificacion = ? WHERE person.key = ?;";
 
         try {
             this.ps = this.conn.getConnection().prepareStatement(SQL_UPDATE);
-            this.ps.setString (1,  data.getNombre());
-            this.ps.setString (2,  data.getApellido());
-            this.ps.setObject (3,  data.getFechaNacimiento());
-            this.ps.setString (4,  data.getCedula());
-            this.ps.setFloat  (5,  data.getAltura());
-            this.ps.setString (6,  data.getTelefono());
-            this.ps.setString (7,  data.getCorreo());
-            this.ps.setObject (8,  data.getFechaModificacion());
-            this.ps.setLong   (9, data.getKey());
-
+            this.ps.setString(1, data.getNombre());
+            this.ps.setString(2, data.getApellido());
+            this.ps.setDate(3, data.getFechaNacimiento());
+            this.ps.setString(4, data.getCedula());
+            this.ps.setFloat(5, data.getAltura());
+            this.ps.setString(6, data.getTelefono());
+            this.ps.setString(7, data.getCorreo());
+            this.ps.setDate(8, data.getFechaModificacion());
+            this.ps.setLong(9, data.getKey());
 
             this.ps.executeUpdate();
 
 
         } catch (SQLException ex) {
-            this.log.error(ex.getMessage());
+            log.error(ex.getMessage());
 
         } finally {
-            this.log.info("Se ha actualisado una persona");
+            log.info("Se ha actualisado una persona");
 
         }
 
@@ -120,10 +118,10 @@ public class PersonRepository implements PersonReposytoryInterface {
 
 
         } catch (SQLException ex) {
-            this.log.error(ex.getMessage());
+            log.error(ex.getMessage());
 
         } finally {
-            this.log.info("Se ha eliminado una persona");
+            log.info("Se ha eliminado una persona");
 
         }
 
@@ -147,26 +145,26 @@ public class PersonRepository implements PersonReposytoryInterface {
 
 
             while (this.res.next()) {
-                this.dto = new Person(
-                        this.res.getLong(1),
-                        this.res.getString(2),
-                        this.res.getString(3),
-                        this.res.getDate(4),
-                        this.res.getString(5),
-                        this.res.getFloat(6),
-                        this.res.getString(7),
-                        this.res.getString(8),
-                        this.res.getDate(9),
-                        this.res.getDate(10)
-                );
+                this.dto = new Person.Builder()
+                    .withKey(res.getLong(1))
+                    .withNombre(res.getString(2))
+                    .withApellido(res.getString(3))
+                    .withFechaNacimiento(res.getDate(4))
+                    .withCedula(res.getString(5))
+                    .withAltura(res.getFloat(6))
+                    .withTelefono(res.getString(7))
+                    .withCorreo(res.getString(8))
+                    .withFechaRegistro(res.getDate(9))
+                    .withFechaModificacion(res.getDate(10))
+                    .build();
             }
 
 
         } catch (SQLException ex) {
-            this.log.error(ex.getMessage());
+            log.error(ex.getMessage());
 
         } finally {
-            this.log.info("Se ha consultado una persona");
+            log.info("Se ha consultado una persona");
 
         }
 
@@ -188,26 +186,29 @@ public class PersonRepository implements PersonReposytoryInterface {
             this.res = this.ps.executeQuery();
 
             while (this.res.next()) {
-                list.add(new Person(
-                        this.res.getLong(1),
-                        this.res.getString(2),
-                        this.res.getString(3),
-                        this.res.getDate(4),
-                        this.res.getString(5),
-                        this.res.getFloat(6),
-                        this.res.getString(7),
-                        this.res.getString(8),
-                        this.res.getDate(9),
-                        this.res.getDate(10)
-                ));
+
+                final Person person = new Person.Builder()
+                    .withKey(res.getLong(1))
+                    .withNombre(res.getString(2))
+                    .withApellido(res.getString(3))
+                    .withFechaNacimiento(res.getDate(4))
+                    .withCedula(res.getString(5))
+                    .withAltura(res.getFloat(6))
+                    .withTelefono(res.getString(7))
+                    .withCorreo(res.getString(8))
+                    .withFechaRegistro(res.getDate(9))
+                    .withFechaModificacion(res.getDate(10))
+                    .build();
+
+                list.add(person);
 
             }
 
         } catch (SQLException ex) {
-            this.log.error(ex.getMessage());
+            log.error(ex.getMessage());
 
         } finally {
-            this.log.info("Se ha consultado todas las personas");
+            log.info("Se ha consultado todas las personas");
 
         }
 
