@@ -1,0 +1,59 @@
+spring:
+
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+    properties:
+      hibernate:
+        enable_lazy_load_no_trans: true
+        temp:
+          use_jdbc_metadata_defaults: false
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/api_person
+    username: adempiere
+    password: adempiere
+    driverClassName: org.postgresql.Driver
+    hikari:
+      connection-test-query: SELECT 1;
+      connection-timeout: 20000
+
+  application:
+    name: Java-SpringBoot-GraphQL
+
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 100MB
+      max-request-size: 100MB
+      file-size-threshold: 0
+      location: /tmp
+
+server:
+  port: 9000
+
+graphql:
+  servlet:
+    actuator-metrics: true
+    mapping: /graphql
+
+altair:
+  enabled: true
+  cdn:
+    enabled: false
+
+graphiql:
+  enabled: true
+  cdn:
+    enabled: false
+
+voyager:
+  enabled: true
+  cdn:
+    enabled: false
