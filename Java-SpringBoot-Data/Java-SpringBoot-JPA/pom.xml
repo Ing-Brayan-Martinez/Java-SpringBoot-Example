@@ -81,11 +81,11 @@
             <artifactId>bootstrap</artifactId>
             <version>3.3.7</version>
         </dependency>
-        <!-- ========== Mysql ========== -->
+        <!-- ========== PostgreSQL ========== -->
         <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.13</version>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.2.5</version>
         </dependency>
     </dependencies>
 

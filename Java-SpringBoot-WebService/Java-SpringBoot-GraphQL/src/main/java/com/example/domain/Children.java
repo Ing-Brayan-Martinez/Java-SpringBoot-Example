@@ -4,6 +4,8 @@ package com.example.domain;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.sql.Date;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Objects;
 
 @Entity
@@ -114,6 +116,20 @@ public class Children implements Serializable {
 
     public void setFechaModificacion(Date fechaModificacion) {
         this.fechaModificacion = fechaModificacion;
+    }
+
+    public Map<String, Object> toMap() {
+        final Map<String, Object> map = new HashMap<>();
+        map.put("keyChildren", keyChildren);
+        map.put("nombre", nombre);
+        map.put("apellido", apellido);
+        map.put("fechaNacimiento", fechaNacimiento);
+        map.put("tipoSangre", tipoSangre);
+        map.put("documentoIdentidad", documentoIdentidad);
+        map.put("fechaRegistro", fechaRegistro);
+        map.put("fechaModificacion", fechaModificacion);
+
+        return map;
     }
 
     @Override

@@ -14,10 +14,23 @@ public class PersonService {
     @Autowired
     private PersonRepository repository;
 
-    public DataFetcher getPersonByIdDataFetcher() {
+    public DataFetcher getPersonById() {
         return dataFetchingEnvironment -> {
             Long id = Long.valueOf(dataFetchingEnvironment.getArgument("id"));
             Person person = repository.getOne(id);
+            Map<String, Object> map = person.toMap();
+            return map;
+        };
+    }
+
+    public DataFetcher updatePerson() {
+        return dataFetchingEnvironment -> {
+            Person param = repository.getOne(Long.valueOf(dataFetchingEnvironment.getArgument("id")));
+            param.setKeyPerson(Long.valueOf(dataFetchingEnvironment.getArgument("id")));
+            param.setNombre(dataFetchingEnvironment.getArgument("name"));
+            repository.save(param);
+
+            Person person = repository.getOne(Long.valueOf(dataFetchingEnvironment.getArgument("id")));
             Map<String, Object> map = person.toMap();
             return map;
         };

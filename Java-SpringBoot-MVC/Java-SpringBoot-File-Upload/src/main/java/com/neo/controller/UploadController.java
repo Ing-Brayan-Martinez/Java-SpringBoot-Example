@@ -15,7 +15,7 @@ import java.nio.file.Paths;
 @Controller
 public class UploadController {
     //Save the uploaded file to this folder
-    private static String UPLOADED_FOLDER = "/var/www/html/";
+    private static String UPLOADED_FOLDER = "/var";
 
     @GetMapping("/")
     public String index() {
@@ -25,12 +25,15 @@ public class UploadController {
     @PostMapping("/upload") // //new annotation since 4.3
     public String singleFileUpload(@RequestParam("file") MultipartFile file,
                                    RedirectAttributes redirectAttributes) {
-        if (file.isEmpty()) {
-            redirectAttributes.addFlashAttribute("message", "Please select a file to upload");
-            return "redirect:uploadStatus";
-        }
-
         try {
+            Files.exists(Paths.get(UPLOADED_FOLDER));
+            Files.createDirectory(Paths.get(UPLOADED_FOLDER));
+
+            if (file.isEmpty()) {
+                redirectAttributes.addFlashAttribute("message", "Please select a file to upload");
+                return "redirect:uploadStatus";
+            }
+
             // Get the file and save it somewhere
             byte[] bytes = file.getBytes();
             Path path = Paths.get(UPLOADED_FOLDER + file.getOriginalFilename());

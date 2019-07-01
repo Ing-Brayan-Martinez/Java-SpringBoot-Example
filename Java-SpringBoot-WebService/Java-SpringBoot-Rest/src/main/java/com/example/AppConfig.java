@@ -1,7 +1,6 @@
 package com.example;
 
 
-import com.zaxxer.hikari.HikariDataSource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -16,7 +15,7 @@ import javax.sql.DataSource;
 
 @Configuration
 @ComponentScan
-@PropertySource(value = { "classpath:application.properties" })
+@PropertySource(value = {"classpath:com/example/infraestructure/database/application.properties"})
 @EnableAutoConfiguration
 public class AppConfig {
 

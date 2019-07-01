@@ -38,7 +38,7 @@ public class BookService {
                     "lastName", "Rice")
     );
 
-    public DataFetcher getBookByIdDataFetcher() {
+    public DataFetcher getBookById() {
         return dataFetchingEnvironment -> {
             String bookId = dataFetchingEnvironment.getArgument("id");
             return books

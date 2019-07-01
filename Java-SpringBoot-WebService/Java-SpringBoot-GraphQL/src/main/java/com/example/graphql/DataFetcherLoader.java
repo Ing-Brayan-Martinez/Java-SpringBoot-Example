@@ -24,12 +24,12 @@ public class DataFetcherLoader implements Loader<RuntimeWiring> {
     @Override
     public RuntimeWiring onLoad() {
         return  RuntimeWiring.newRuntimeWiring()
-                .type(TypeRuntimeWiring.newTypeWiring("Query")
-                        .dataFetcher("bookById", bookService.getBookByIdDataFetcher()))
-                .type(TypeRuntimeWiring.newTypeWiring("Book")
-                        .dataFetcher("author", bookService.getAuthorDataFetcher()))
-                .type(TypeRuntimeWiring.newTypeWiring("Query")
-                        .dataFetcher("personById", personService.getPersonByIdDataFetcher()))
+                .type(TypeRuntimeWiring.newTypeWiring("Query").dataFetcher("bookById", bookService.getBookById()))
+                .type(TypeRuntimeWiring.newTypeWiring("Query").dataFetcher("personById", personService.getPersonById()))
+                .type(TypeRuntimeWiring.newTypeWiring("Query").dataFetcher("childrenById", childrenService.getChildrenById()))
+                .type(TypeRuntimeWiring.newTypeWiring("Mutation").dataFetcher("updateNamePerson", personService.updatePerson()))
+                .type(TypeRuntimeWiring.newTypeWiring("Book").dataFetcher("author", bookService.getAuthorDataFetcher()))
+                .type(TypeRuntimeWiring.newTypeWiring("Person").dataFetcher("childrens", childrenService.getChildrenListByKeyPerson()))
                 .build();
     }
 }

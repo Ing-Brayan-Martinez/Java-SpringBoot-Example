@@ -1,3 +1,6 @@
+server:
+  port: 8080
+
 spring:
 
   jpa:
@@ -16,7 +19,7 @@ spring:
 
   datasource:
     platform: postgres
-    url: jdbc:postgresql://localhost:5432/api_person
+    url: jdbc:postgresql://localhost:5432/IntelixCloudMessenger
     username: adempiere
     password: adempiere
     driverClassName: org.postgresql.Driver
@@ -25,7 +28,7 @@ spring:
       connection-timeout: 20000
 
   application:
-    name: Java-SpringBoot-GraphQL
+    name: Java-SpringBoot-JPA
 
   servlet:
     multipart:
@@ -35,29 +38,5 @@ spring:
       file-size-threshold: 0
       location: /tmp
 
-  liquibase:
-    enabled: true
-    change-log: db/changelog/changuelog-master.xml
-
-server:
-  port: 9000
-
-graphql:
-  servlet:
-    actuator-metrics: true
-    mapping: /graphql
-
-altair:
-  enabled: true
-  cdn:
-    enabled: false
-
-graphiql:
-  enabled: true
-  cdn:
-    enabled: false
-
-voyager:
-  enabled: true
-  cdn:
-    enabled: false
+  thymeleaf:
+    cache: false
