@@ -26,8 +26,10 @@ public class UploadController {
     public String singleFileUpload(@RequestParam("file") MultipartFile file,
                                    RedirectAttributes redirectAttributes) {
         try {
-            Files.exists(Paths.get(UPLOADED_FOLDER));
-            Files.createDirectory(Paths.get(UPLOADED_FOLDER));
+
+            if (!Files.exists(Paths.get(UPLOADED_FOLDER))) {
+                Files.createDirectory(Paths.get(UPLOADED_FOLDER));
+            }
 
             if (file.isEmpty()) {
                 redirectAttributes.addFlashAttribute("message", "Please select a file to upload");
@@ -36,7 +38,7 @@ public class UploadController {
 
             // Get the file and save it somewhere
             byte[] bytes = file.getBytes();
-            Path path = Paths.get(UPLOADED_FOLDER + file.getOriginalFilename());
+            Path path = Paths.get(UPLOADED_FOLDER + "/" + file.getOriginalFilename());
             Files.write(path, bytes);
 
             redirectAttributes.addFlashAttribute("message", "You successfully uploaded '" + file.getOriginalFilename() + "'");
