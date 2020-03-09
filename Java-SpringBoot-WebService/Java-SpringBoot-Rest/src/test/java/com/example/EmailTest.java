@@ -1,17 +1,17 @@
 package com.example;
 
-import com.example.infraestructure.mail.EMail;
-import com.example.infraestructure.mail.EmailManager;
-import org.junit.Test;
+import com.example.service.dto.EmailDTO;
+import com.example.service.impl.EmailServiceImpl;
+import org.junit.jupiter.api.Test;
 
 public class EmailTest {
 
     @Test
     public void exec() {
 
-        EMail msg = new EMail("hola", "brayanmartinez827@gmail.com", "Este es el sugeto Conexion seguridad");
+        EmailDTO msg = new EmailDTO("hola", "brayanmartinez827@gmail.com", "Este es el sugeto Conexion seguridad");
 
-        EmailManager x = new EmailManager();
+        EmailServiceImpl x = new EmailServiceImpl();
         x.sendMessage(msg);
     }
 }
