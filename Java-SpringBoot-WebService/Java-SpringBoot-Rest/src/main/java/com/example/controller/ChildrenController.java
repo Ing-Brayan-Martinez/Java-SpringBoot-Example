@@ -14,7 +14,7 @@ import java.util.List;
 @RestController
 @CrossOrigin
 @RequestMapping("/api/v1")
-public class ChildrenController {
+public final class ChildrenController {
 
     @Autowired
     private ChildrenService service;

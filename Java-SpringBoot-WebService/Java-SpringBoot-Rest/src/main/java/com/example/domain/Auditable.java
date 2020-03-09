@@ -15,32 +15,26 @@
  */
 package com.example.domain;
 
-import lombok.Builder;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
-import java.sql.Date;
+import java.io.Serializable;
+import java.sql.Timestamp;
 
+@Getter
+@Setter
+@ToString
+public abstract class Auditable implements Serializable {
 
-@Data
-@Builder
-public class Children extends Auditable {
+	private Long createdBy;
 
-    private long key;
+	private Timestamp created;
 
-    private String nombre;
+	private Long updatedBy;
 
-    private String apellido;
+	private Timestamp updated;
 
-    private Date fechaNacimiento;
-
-    private String tipoSangre;
-
-    private String documentoIdentidad;
-
-    private int keyPersona;
-
-    private Date fechaRegistro;
-
-    private Date fechaModificacion;
+	private Boolean isActive;
 
 }

@@ -11,8 +11,6 @@ public interface PersonReposytory {
 
     public Person update(Person data);
 
-    public Person delete(long key);
-
     public Optional<Person> findById(long key);
 
     public List<Person> findAll();

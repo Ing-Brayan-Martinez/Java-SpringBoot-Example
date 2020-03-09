@@ -15,32 +15,16 @@
  */
 package com.example.domain;
 
-import lombok.Builder;
+
 import lombok.Data;
 
-import java.sql.Date;
-
-
 @Data
-@Builder
-public class Children extends Auditable {
+public class Role extends Auditable {
 
-    private long key;
+    private long roleId;
 
-    private String nombre;
+    private String name;
 
-    private String apellido;
-
-    private Date fechaNacimiento;
-
-    private String tipoSangre;
-
-    private String documentoIdentidad;
-
-    private int keyPersona;
-
-    private Date fechaRegistro;
-
-    private Date fechaModificacion;
+    private String description;
 
 }

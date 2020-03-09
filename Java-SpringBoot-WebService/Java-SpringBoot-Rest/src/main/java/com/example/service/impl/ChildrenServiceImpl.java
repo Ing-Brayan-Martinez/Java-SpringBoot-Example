@@ -1,6 +1,6 @@
 package com.example.service.impl;
 
-import com.example.convert.ChildrenConverted;
+import com.example.convert.ChildrenConvert;
 import com.example.domain.Children;
 import com.example.repository.impl.ChildrenRepositoryImpl;
 import com.example.service.ChildrenService;
@@ -18,7 +18,7 @@ public class ChildrenServiceImpl implements ChildrenService {
     private ChildrenRepositoryImpl repository;
 
     @Autowired
-    private ChildrenConverted factory;
+    private ChildrenConvert factory;
 
     @Override
     public Optional<ChildrenDTO> save(ChildrenDTO dto) {

@@ -110,34 +110,6 @@ public class ChildrenRepositoryImpl implements ChildrenReposytory {
         return findLastModifiedById(data.getKey());
     }
 
-
-    /**
-     * Eliminar un hijo.
-     * @param key Clave primaria del hijo a delete.
-     */
-    @Override
-    public Children delete(long key) {
-
-        final String sql = "DELETE FROM children WHERE children.key = ?;";
-
-        try (Connection con = this.conn.getConnection()) {
-            this.ps = con.prepareStatement(sql);
-            this.ps.setLong(1, key);
-            this.ps.executeUpdate();
-
-
-        } catch (SQLException ex) {
-            this.log.error(ex.getMessage());
-
-        } finally {
-            this.log.info("Se ha eliminado un hijo");
-
-        }
-
-        return findLastModifiedById(key);
-    }
-
-
     /**
      * Obtener un hijo.
      * @param key Clave primaria del hijo a select.

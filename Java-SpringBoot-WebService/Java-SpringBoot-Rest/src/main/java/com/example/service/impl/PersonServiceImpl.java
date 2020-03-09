@@ -1,6 +1,6 @@
 package com.example.service.impl;
 
-import com.example.convert.PersonConverted;
+import com.example.convert.PersonConvert;
 import com.example.domain.Person;
 import com.example.repository.impl.PersonRepositoryImpl;
 import com.example.service.EmailService;
@@ -19,7 +19,7 @@ public class PersonServiceImpl implements PersonService {
     private PersonRepositoryImpl repository;
 
     @Autowired
-    private PersonConverted converted;
+    private PersonConvert converted;
 
     @Autowired
     private EmailService manager;

@@ -8,12 +8,12 @@ import org.springframework.stereotype.Component;
 
 
 @Component
-public class PersonConverted implements Converted<Person, PersonDTO> {
+public final class PersonConvert implements Convert<PersonDTO, Person> {
 
     private final Logger log = LoggerFactory.getLogger(getClass());
 
     @Override
-    public Person fromDto(PersonDTO dto) {
+    public Person fromDTO(PersonDTO dto) {
         return Person.builder()
             .key(dto.getKey())
             .nombre(dto.getNombre())
@@ -28,4 +28,13 @@ public class PersonConverted implements Converted<Person, PersonDTO> {
             .build();
     }
 
+    @Override
+    public Person fromDTO(Person entity, PersonDTO dto) {
+        return null;
+    }
+
+    @Override
+    public PersonDTO toDTO(Person entity) {
+        return null;
+    }
 }

@@ -15,32 +15,29 @@
  */
 package com.example.domain;
 
-import lombok.Builder;
 import lombok.Data;
-
-import java.sql.Date;
 
 
 @Data
-@Builder
-public class Children extends Auditable {
+public class User extends Auditable {
 
-    private long key;
+    private long userId;
 
-    private String nombre;
+	private String name;
 
-    private String apellido;
+	private String username;
 
-    private Date fechaNacimiento;
+    private String email;
 
-    private String tipoSangre;
+    private Float commission;
 
-    private String documentoIdentidad;
+	private String password;
 
-    private int keyPersona;
+    private Boolean isAccountNonExpired;
 
-    private Date fechaRegistro;
+    private Boolean isAccountNonLocked;
 
-    private Date fechaModificacion;
+    private Boolean isCredentialsNonExpired;
+
 
 }

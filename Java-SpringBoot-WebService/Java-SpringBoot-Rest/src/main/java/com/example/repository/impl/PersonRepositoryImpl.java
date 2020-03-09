@@ -107,35 +107,6 @@ public class PersonRepositoryImpl implements PersonReposytory {
         return findLastModifiedById(data.getKey());
     }
 
-
-    /**
-     * Eliminar una person.
-     * @param key Clave primaria de la person a delete.
-     */
-    @Override
-    public Person delete(long key) {
-
-        final String SQL_DELETE = "DELETE FROM person WHERE person.key = ?;";
-
-        try (Connection con = this.conn.getConnection()) {
-
-            this.ps = con.prepareStatement(SQL_DELETE);
-            this.ps.setLong(1, key);
-            this.ps.executeUpdate() ;
-
-
-        } catch (SQLException ex) {
-            log.error(ex.getMessage());
-
-        } finally {
-            log.info("Se ha eliminado una persona");
-
-        }
-
-        return findLastModifiedById(key);
-    }
-
-
     /**
      * Obtener una person.
      * @param key Clave primaria de la person a select.

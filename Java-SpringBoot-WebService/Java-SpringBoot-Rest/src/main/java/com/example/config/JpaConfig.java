@@ -1,6 +1,7 @@
 package com.example.config;
 
 
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -45,6 +46,11 @@ public class JpaConfig {
 //
 //        return ds;
 //    }
+
+    @Bean
+    public ModelMapper modelMapper() {
+        return new ModelMapper();
+    }
 
 }
 

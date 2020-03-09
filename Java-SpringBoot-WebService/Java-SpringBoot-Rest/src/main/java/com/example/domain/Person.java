@@ -19,22 +19,30 @@ package com.example.domain;
 import lombok.Builder;
 import lombok.Data;
 
-import java.io.Serializable;
 import java.sql.Date;
 
 @Data
 @Builder
-public class Person implements Serializable {
+public class Person extends Auditable {
 
     private Long key;
+
     private String nombre;
+
     private String apellido;
+
     private Date fechaNacimiento;
+
     private String cedula;
+
     private Float altura;
+
     private String telefono;
+
     private String correo;
+
     private Date fechaRegistro;
+
     private Date fechaModificacion;
 
 }

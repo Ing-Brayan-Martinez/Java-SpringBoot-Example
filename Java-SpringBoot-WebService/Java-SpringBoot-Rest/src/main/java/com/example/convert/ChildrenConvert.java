@@ -8,12 +8,12 @@ import org.springframework.stereotype.Component;
 
 
 @Component
-public class ChildrenConverted implements Converted<Children, ChildrenDTO> {
+public final class ChildrenConvert implements Convert<ChildrenDTO, Children> {
 
-    private final static Logger log = LoggerFactory.getLogger(ChildrenConverted.class);
+    private final Logger log = LoggerFactory.getLogger(getClass());
 
     @Override
-    public Children fromDto(ChildrenDTO dto) {
+    public Children fromDTO(ChildrenDTO dto) {
         return Children.builder()
             .key(dto.getKey())
             .nombre(dto.getNombre())
@@ -25,5 +25,15 @@ public class ChildrenConverted implements Converted<Children, ChildrenDTO> {
             .fechaRegistro(dto.getFechaRegistro())
             .fechaModificacion(dto.getFechaModificacion())
             .build();
+    }
+
+    @Override
+    public Children fromDTO(Children entity, ChildrenDTO dto) {
+        return null;
+    }
+
+    @Override
+    public ChildrenDTO toDTO(Children entity) {
+        return null;
     }
 }

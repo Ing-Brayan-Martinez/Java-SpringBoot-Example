@@ -12,8 +12,6 @@ public interface ChildrenReposytory {
 
     public Children update(Children data);
 
-    public Children delete(long key);
-
     public Optional<Children> findById(long key);
 
     public List<Children> findAll();

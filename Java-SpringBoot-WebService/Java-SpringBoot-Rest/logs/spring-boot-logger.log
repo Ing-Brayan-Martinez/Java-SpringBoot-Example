@@ -161,3 +161,4 @@ Using generated security password: 3ee3749b-2b5c-4227-bf7a-349e089e0cd1
 2020-03-09 15:03:56,569 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
 2020-03-09 15:03:56,598 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
 2020-03-09 15:03:56,603 INFO org.springframework.boot.StartupInfoLogger [main] Started DemoApplication in 3.964 seconds (JVM running for 4.721)
+2020-03-09 16:59:49,610 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
