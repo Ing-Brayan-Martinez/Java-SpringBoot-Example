@@ -1,7 +1,7 @@
 package com.example.repository.impl;
 
 import com.example.domain.Person;
-import com.example.repository.PersonReposytory;
+import com.example.repository.PersonRepository;
 import com.example.util.BooleanConverter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,7 +19,7 @@ import java.util.Optional;
 
 
 @Repository
-public class PersonRepositoryImpl implements PersonReposytory {
+public class PersonRepositoryImpl implements PersonRepository {
 
     //Atributos constantes.
     private final Logger log = LoggerFactory.getLogger(getClass());

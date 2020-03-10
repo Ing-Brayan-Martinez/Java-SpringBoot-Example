@@ -57,4 +57,11 @@ public class RoleRepositoryTest {
         Assert.isTrue(!list.isEmpty(), "Has fracasado la prueba");
         list.forEach(System.out::println);
     }
+
+    @Test
+    public void findByUserId() {
+        final List<Role> list = this.roleRepository.findByUserId(1L);
+        Assert.isTrue(!list.isEmpty(), "Has fracasado la prueba");
+        list.forEach(System.out::println);
+    }
 }

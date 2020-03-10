@@ -17,7 +17,7 @@ import java.util.Optional;
 public class PersonRepositoryTest {
 
     @Autowired
-    private PersonReposytory personReposytory;
+    private PersonRepository personReposytory;
 
     @Test
     public void insert() {

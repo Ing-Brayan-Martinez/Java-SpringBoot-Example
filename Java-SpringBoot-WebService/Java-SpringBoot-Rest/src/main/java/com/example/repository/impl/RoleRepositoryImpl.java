@@ -180,6 +180,7 @@ public class RoleRepositoryImpl implements RoleRepository {
 
         try (Connection con = this.conn.getConnection()) {
             this.ps  = con.prepareStatement(sql.toString());
+            this.ps.setLong(1, userId);
             this.res = this.ps.executeQuery();
 
             while (this.res.next()) {

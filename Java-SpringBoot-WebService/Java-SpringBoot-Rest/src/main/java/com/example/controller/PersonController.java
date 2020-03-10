@@ -34,7 +34,7 @@ public final class PersonController {
     @PutMapping("/person/{personId}")
     public ResponseEntity<PersonDTO> update(@PathVariable Long personId, @RequestBody PersonDTO dto) {
         this.logger.debug("PUT /api/v1/person/{personId}");
-        dto.setKey(personId);
+        dto.setParsonId(personId);
 
         return this.personService.update(dto)
             .map(res -> new ResponseEntity<>(res, HttpStatus.OK))

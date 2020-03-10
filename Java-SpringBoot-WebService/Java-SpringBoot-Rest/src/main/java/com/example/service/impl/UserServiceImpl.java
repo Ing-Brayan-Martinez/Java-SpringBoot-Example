@@ -16,6 +16,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.sql.Timestamp;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -71,8 +72,14 @@ public class UserServiceImpl implements UserService, UserAuditableService {
     @Override
     public Optional<UserDTO> delete(Long id) {
         final Optional<User> optional = this.userRepository.findById(id);
+
+        final UserDTO audit = this.getCurrentUser()
+            .orElseThrow(() -> new UsernameNotFoundException("No existe usuario solicitado"));
+
         return optional.map(entity -> {
                 entity.setIsActive(!entity.getIsActive());
+                entity.setUpdated(new Timestamp(System.currentTimeMillis()));
+                entity.setUpdatedBy(audit.getUserId());
                 return entity;
             })
             .map(entity -> this.userRepository.update(entity))

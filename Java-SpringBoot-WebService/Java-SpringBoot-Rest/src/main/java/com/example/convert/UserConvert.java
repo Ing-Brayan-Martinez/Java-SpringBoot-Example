@@ -5,7 +5,6 @@ import com.example.domain.User;
 import com.example.repository.RoleRepository;
 import com.example.service.UserAuditableService;
 import com.example.service.dto.UserDTO;
-import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Component;
@@ -14,9 +13,6 @@ import java.util.List;
 
 @Component
 public final class UserConvert implements Convert<UserDTO, User> {
-
-    @Autowired
-    private ModelMapper modelMapper;
 
     @Autowired
     private RoleRepository roleRepository;
@@ -30,21 +26,21 @@ public final class UserConvert implements Convert<UserDTO, User> {
         final UserDTO audit = this.userAuditableService.getCurrentUser()
             .orElseThrow(() -> new UsernameNotFoundException("No existe usuario solicitado"));
 
-        final User user = new User();
-        user.setUserId(userDTO.getUserId());
-        user.setName(userDTO.getName());
-        user.setUsername(userDTO.getUsername());
-        user.setEmail(userDTO.getEmail());
-        user.setCommission(userDTO.getCommission());
-        user.setPassword(userDTO.getPassword());
-        user.setIsAccountNonExpired(userDTO.getIsAccountNonExpired());
-        user.setIsAccountNonLocked(userDTO.getIsAccountNonLocked());
-        user.setIsCredentialsNonExpired(userDTO.getIsCredentialsNonExpired());
+        final User entity = new User();
+        entity.setUserId(userDTO.getUserId());
+        entity.setName(userDTO.getName());
+        entity.setUsername(userDTO.getUsername());
+        entity.setEmail(userDTO.getEmail());
+        entity.setCommission(userDTO.getCommission());
+        entity.setPassword(userDTO.getPassword());
+        entity.setIsAccountNonExpired(userDTO.getIsAccountNonExpired());
+        entity.setIsAccountNonLocked(userDTO.getIsAccountNonLocked());
+        entity.setIsCredentialsNonExpired(userDTO.getIsCredentialsNonExpired());
 
-        user.setCreatedBy(audit.getUserId());
-        user.setUpdatedBy(audit.getUserId());
+        entity.setCreatedBy(audit.getUserId());
+        entity.setUpdatedBy(audit.getUserId());
 
-        return user;
+        return entity;
     }
 
     @Override

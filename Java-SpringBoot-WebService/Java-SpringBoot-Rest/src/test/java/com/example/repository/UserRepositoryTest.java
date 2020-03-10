@@ -67,4 +67,10 @@ public class UserRepositoryTest {
         Assert.isTrue(!list.isEmpty(), "Has fracasado la prueba");
         list.forEach(System.out::println);
     }
+
+    @Test
+    public void findByUsername() {
+        final Optional<User> list = this.userRepository.findByUserName("system");
+        Assert.isTrue(list.isPresent(), "Has fracasado la prueba");
+    }
 }

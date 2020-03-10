@@ -5,7 +5,7 @@ import com.example.domain.Person;
 import java.util.List;
 import java.util.Optional;
 
-public interface PersonReposytory {
+public interface PersonRepository {
 
     Person insert(Person data);
 
