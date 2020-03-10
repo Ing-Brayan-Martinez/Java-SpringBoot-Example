@@ -14,17 +14,7 @@ public final class ChildrenConvert implements Convert<ChildrenDTO, Children> {
 
     @Override
     public Children fromDTO(ChildrenDTO dto) {
-        return Children.builder()
-            .key(dto.getKey())
-            .nombre(dto.getNombre())
-            .apellido(dto.getApellido())
-            .fechaNacimiento(dto.getFechaNacimiento())
-            .tipoSangre(dto.getTipoSangre())
-            .documentoIdentidad(dto.getDocumentoIdentidad())
-            .keyPersona(dto.getKeyPersona())
-            .fechaRegistro(dto.getFechaRegistro())
-            .fechaModificacion(dto.getFechaModificacion())
-            .build();
+        return null;
     }
 
     @Override

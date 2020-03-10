@@ -8,7 +8,7 @@ import java.util.Optional;
 
 public interface UserRepository {
 
-    User create(User user);
+    User insert(User user);
 
     User update(User user);
 

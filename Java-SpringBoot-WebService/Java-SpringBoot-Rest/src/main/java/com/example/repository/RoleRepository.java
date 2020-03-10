@@ -17,5 +17,4 @@ public interface RoleRepository {
     List<Role> findAll();
 
     List<Role> findByUserId(Long userId);
-
 }

@@ -14,18 +14,7 @@ public final class PersonConvert implements Convert<PersonDTO, Person> {
 
     @Override
     public Person fromDTO(PersonDTO dto) {
-        return Person.builder()
-            .key(dto.getKey())
-            .nombre(dto.getNombre())
-            .apellido(dto.getApellido())
-            .fechaNacimiento(dto.getFechaNacimiento())
-            .cedula(dto.getCedula())
-            .altura(dto.getAltura())
-            .telefono(dto.getTelefono())
-            .correo(dto.getCorreo())
-            .fechaRegistro(dto.getFechaRegistro())
-            .fechaModificacion(dto.getFechaModificacion())
-            .build();
+        return null;
     }
 
     @Override

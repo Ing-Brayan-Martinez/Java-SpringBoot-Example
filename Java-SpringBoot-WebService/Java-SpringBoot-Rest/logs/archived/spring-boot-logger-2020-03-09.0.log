@@ -1,0 +1,164 @@
+2019-05-20 08:44:09,499 INFO org.springframework.boot.StartupInfoLogger [main] Starting DemoApplication on W10WDVAL144E55A with PID 27464 (C:\sources\workspace-bmartinez\Java-SpringBoot-Example\Java-SpringBoot-WebService\Java-SpringBoot-Rest\target\classes started by bmartinez in C:\sources\workspace-bmartinez\Java-SpringBoot-Example\Java-SpringBoot-WebService\Java-SpringBoot-Rest)
+2019-05-20 08:44:09,926 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-05-20 08:44:10,395 INFO org.springframework.context.support.AbstractApplicationContext [main] Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3427b02d: startup date [Mon May 20 08:44:10 VET 2019]; root of context hierarchy
+2019-05-20 08:44:16,315 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2019-05-20 08:44:16,390 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2019-05-20 08:44:16,417 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2019-05-20 08:44:16,418 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet Engine: Apache Tomcat/8.5.28
+2019-05-20 08:44:16,451 INFO org.apache.juli.logging.DirectJDKLog [localhost-startStop-1] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_201\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\bin\apache-maven\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\ProgramData\chocolatey\bin;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\Users\bmartinez\AppData\Roaming\npm\node_modules\ionic\bin;C:\Users\bmartinez\AppData\Roaming\npm\node_modules\cordova\bin\;C:\Users\bmartinez\AppData\Roaming\npm\node_modules\@angular\cli\bin\;C:\tools\php73;C:\ProgramData\ComposerSetup\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Subversion\bin;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft VS Code\bin;C:\tools\dart-sdk\bin;C:\Users\bmartinez\AppData\Local\Programs\Git\bin;C:\wamp64\bin\mysql\mysql5.7.9\bin;C:\Program Files (x86)\sbt\bin;C:\Program Files (x86)\scala\bin;C:\Program Files (x86)\Yarn\bin\;C:\Users\bmartinez\AppData\Roaming\npm\node_modules\nativescript\bin;C:\Users\bmartinez\.cargo\bin;C:\Program Files (x86)\Elm\0.19\bin;C:\Users\bmartinez\AppData\Roaming\Composer\vendor\bin;C:\Users\bmartinez\AppData\Local\Programs\Git\bin;C:\Users\bmartinez\AppData\Local\Yarn\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.1.1\bin;;.]
+2019-05-20 08:44:17,803 INFO org.apache.juli.logging.DirectJDKLog [localhost-startStop-1] Initializing Spring embedded WebApplicationContext
+2019-05-20 08:44:17,804 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [localhost-startStop-1] Root WebApplicationContext: initialization completed in 7409 ms
+2019-05-20 08:44:17,982 INFO org.springframework.boot.web.servlet.ServletRegistrationBean [localhost-startStop-1] Servlet dispatcherServlet mapped to [/]
+2019-05-20 08:44:17,987 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-05-20 08:44:17,988 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-05-20 08:44:17,988 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-05-20 08:44:17,988 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'requestContextFilter' to: [/*]
+2019-05-20 08:44:18,926 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [main] Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3427b02d: startup date [Mon May 20 08:44:10 VET 2019]; root of context hierarchy
+2019-05-20 08:44:19,025 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/api/v1/children/create],methods=[POST]}" onto public void com.example.controller.ChildrenController.insertAction(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Integer)
+2019-05-20 08:44:19,029 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/api/v1/children/all],methods=[GET]}" onto public java.util.List<com.example.domain.Children> com.example.controller.ChildrenController.selectAllAction()
+2019-05-20 08:44:19,030 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/api/v1/children/all/by/id/{id}],methods=[GET]}" onto public com.example.domain.Children com.example.controller.ChildrenController.selectAction(java.lang.Long)
+2019-05-20 08:44:19,032 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/api/v1/children/delete],methods=[DELETE]}" onto public void com.example.controller.ChildrenController.deleteAction(java.lang.Long)
+2019-05-20 08:44:19,033 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/api/v1/children/update],methods=[PUT]}" onto public void com.example.controller.ChildrenController.updateAction(java.lang.Integer,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Integer)
+2019-05-20 08:44:19,036 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/],methods=[GET]}" onto public java.lang.String com.example.controller.HomeController.hola()
+2019-05-20 08:44:19,039 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/v1/person/create],methods=[POST]}" onto public void com.example.controller.PersonController.insertAction(com.example.domain.Person)
+2019-05-20 08:44:19,040 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/v1/person/all],methods=[GET]}" onto public java.util.List<com.example.domain.Person> com.example.controller.PersonController.selectAllAction()
+2019-05-20 08:44:19,041 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/v1/person/all/by/id/{id}],methods=[GET]}" onto public com.example.domain.Person com.example.controller.PersonController.selectAction(java.lang.Long)
+2019-05-20 08:44:19,043 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/v1/person/delete/{id}],methods=[DELETE]}" onto public void com.example.controller.PersonController.deleteAction(java.lang.Long)
+2019-05-20 08:44:19,044 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/v1/person/update],methods=[PUT]}" onto public void com.example.controller.PersonController.updateAction(com.example.domain.Person)
+2019-05-20 08:44:19,050 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-05-20 08:44:19,051 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-05-20 08:44:19,107 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-20 08:44:19,107 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-20 08:44:19,170 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-20 08:44:19,546 INFO org.springframework.jmx.export.MBeanExporter [main] Registering beans for JMX exposure on startup
+2019-05-20 08:44:19,548 INFO org.springframework.jmx.export.MBeanExporter [main] Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-05-20 08:44:19,554 INFO org.springframework.jmx.export.MBeanExporter [main] Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-05-20 08:44:19,582 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2019-05-20 08:44:19,595 INFO org.apache.juli.logging.DirectJDKLog [main] Using a shared selector for servlet write/read
+2019-05-20 08:44:19,828 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2019-05-20 08:44:19,832 INFO org.springframework.boot.StartupInfoLogger [main] Started DemoApplication in 14.774 seconds (JVM running for 23.864)
+2020-03-09 11:12:12,903 INFO org.springframework.boot.StartupInfoLogger [main] Starting DemoApplication on vostro with PID 5462 (/home/brayan/Escritorio/Project/Ing-Brayan-Martinez/Java-SpringBoot-Example/Java-SpringBoot-WebService/Java-SpringBoot-Rest/target/classes started by brayan in /home/brayan/Escritorio/Project/Ing-Brayan-Martinez/Java-SpringBoot-Example/Java-SpringBoot-WebService/Java-SpringBoot-Rest)
+2020-03-09 11:12:12,928 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-03-09 11:12:13,073 INFO org.springframework.context.support.AbstractApplicationContext [main] Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4535b6d5: startup date [Mon Mar 09 11:12:13 VET 2020]; root of context hierarchy
+2020-03-09 11:12:14,922 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2020-03-09 11:12:14,938 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2020-03-09 11:12:14,948 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2020-03-09 11:12:14,948 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet Engine: Apache Tomcat/8.5.28
+2020-03-09 11:12:14,953 INFO org.apache.juli.logging.DirectJDKLog [localhost-startStop-1] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+2020-03-09 11:12:15,061 INFO org.apache.juli.logging.DirectJDKLog [localhost-startStop-1] Initializing Spring embedded WebApplicationContext
+2020-03-09 11:12:15,061 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [localhost-startStop-1] Root WebApplicationContext: initialization completed in 1997 ms
+2020-03-09 11:12:15,167 INFO org.springframework.boot.web.servlet.ServletRegistrationBean [localhost-startStop-1] Servlet dispatcherServlet mapped to [/]
+2020-03-09 11:12:15,171 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-03-09 11:12:15,172 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-03-09 11:12:15,172 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-03-09 11:12:15,172 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'requestContextFilter' to: [/*]
+2020-03-09 11:12:15,663 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [main] Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4535b6d5: startup date [Mon Mar 09 11:12:13 VET 2020]; root of context hierarchy
+2020-03-09 11:12:15,718 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/api/v1/children/create],methods=[POST]}" onto public void com.example.controller.ChildrenController.insertAction(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Integer)
+2020-03-09 11:12:15,719 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/api/v1/children/update],methods=[PUT]}" onto public void com.example.controller.ChildrenController.updateAction(java.lang.Integer,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Integer)
+2020-03-09 11:12:15,720 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/api/v1/children/delete],methods=[DELETE]}" onto public void com.example.controller.ChildrenController.deleteAction(java.lang.Long)
+2020-03-09 11:12:15,720 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/api/v1/children/all],methods=[GET]}" onto public java.util.List<com.example.domain.Children> com.example.controller.ChildrenController.selectAllAction()
+2020-03-09 11:12:15,721 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/api/v1/children/all/by/id/{id}],methods=[GET]}" onto public com.example.domain.Children com.example.controller.ChildrenController.selectAction(java.lang.Long)
+2020-03-09 11:12:15,722 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/],methods=[GET]}" onto public java.lang.String com.example.controller.HomeController.hola()
+2020-03-09 11:12:15,725 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/v1/person/create],methods=[POST]}" onto public void com.example.controller.PersonController.insertAction(com.example.domain.Person)
+2020-03-09 11:12:15,725 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/v1/person/update],methods=[PUT]}" onto public void com.example.controller.PersonController.updateAction(com.example.domain.Person)
+2020-03-09 11:12:15,726 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/v1/person/delete/{id}],methods=[DELETE]}" onto public void com.example.controller.PersonController.deleteAction(java.lang.Long)
+2020-03-09 11:12:15,726 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/v1/person/all],methods=[GET]}" onto public java.util.List<com.example.domain.Person> com.example.controller.PersonController.selectAllAction()
+2020-03-09 11:12:15,727 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/v1/person/all/by/id/{id}],methods=[GET]}" onto public com.example.domain.Person com.example.controller.PersonController.selectAction(java.lang.Long)
+2020-03-09 11:12:15,731 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-03-09 11:12:15,732 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-03-09 11:12:15,765 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-09 11:12:15,765 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-09 11:12:15,800 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-09 11:12:16,015 INFO org.springframework.jmx.export.MBeanExporter [main] Registering beans for JMX exposure on startup
+2020-03-09 11:12:16,017 INFO org.springframework.jmx.export.MBeanExporter [main] Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-03-09 11:12:16,023 INFO org.springframework.jmx.export.MBeanExporter [main] Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-03-09 11:12:16,036 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2020-03-09 11:12:16,041 INFO org.apache.juli.logging.DirectJDKLog [main] Using a shared selector for servlet write/read
+2020-03-09 11:12:16,056 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2020-03-09 11:12:16,061 INFO org.springframework.boot.StartupInfoLogger [main] Started DemoApplication in 4.739 seconds (JVM running for 6.38)
+2020-03-09 11:12:22,353 INFO org.springframework.context.support.AbstractApplicationContext [Thread-6] Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4535b6d5: startup date [Mon Mar 09 11:12:13 VET 2020]; root of context hierarchy
+2020-03-09 11:12:22,355 INFO org.springframework.jmx.export.MBeanExporter [Thread-6] Unregistering JMX-exposed beans on shutdown
+2020-03-09 11:12:22,356 INFO org.springframework.jmx.support.MBeanRegistrationSupport [Thread-6] Unregistering JMX-exposed beans
+2020-03-09 14:33:19,442 INFO org.springframework.boot.StartupInfoLogger [main] Starting DemoApplication on vostro with PID 21010 (/home/brayan/Escritorio/Project/Ing-Brayan-Martinez/Java-SpringBoot-Example/Java-SpringBoot-WebService/Java-SpringBoot-Rest/target/classes started by brayan in /home/brayan/Escritorio/Project/Ing-Brayan-Martinez/Java-SpringBoot-Example/Java-SpringBoot-WebService/Java-SpringBoot-Rest)
+2020-03-09 14:33:19,445 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-03-09 14:33:21,861 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 14:33:22,141 INFO org.springframework.boot.StartupInfoLogger [main] Starting DemoApplication on vostro with PID 21078 (/home/brayan/Escritorio/Project/Ing-Brayan-Martinez/Java-SpringBoot-Example/Java-SpringBoot-WebService/Java-SpringBoot-Rest/target/classes started by brayan in /home/brayan/Escritorio/Project/Ing-Brayan-Martinez/Java-SpringBoot-Example/Java-SpringBoot-WebService/Java-SpringBoot-Rest)
+2020-03-09 14:33:22,155 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-03-09 14:33:22,628 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2020-03-09 14:33:22,640 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2020-03-09 14:33:22,641 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2020-03-09 14:33:22,642 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-09 14:33:22,783 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2020-03-09 14:33:22,783 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3299 ms
+2020-03-09 14:33:23,015 WARN org.springframework.context.support.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'childrenController': Unsatisfied dependency expressed through field 'service'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.service.ChildrenService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-03-09 14:33:23,019 INFO org.apache.juli.logging.DirectJDKLog [main] Stopping service [Tomcat]
+2020-03-09 14:33:23,058 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-03-09 14:33:23,194 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field service in com.example.controller.ChildrenController required a bean of type 'com.example.service.ChildrenService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.example.service.ChildrenService' in your configuration.
+
+2020-03-09 14:33:23,671 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 14:33:24,014 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2020-03-09 14:33:24,023 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2020-03-09 14:33:24,024 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2020-03-09 14:33:24,024 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-09 14:33:24,092 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2020-03-09 14:33:24,093 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1790 ms
+2020-03-09 14:33:24,223 WARN org.springframework.context.support.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'childrenController': Unsatisfied dependency expressed through field 'service'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.service.ChildrenService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-03-09 14:33:24,226 INFO org.apache.juli.logging.DirectJDKLog [main] Stopping service [Tomcat]
+2020-03-09 14:33:24,248 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-03-09 14:33:24,327 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field service in com.example.controller.ChildrenController required a bean of type 'com.example.service.ChildrenService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.example.service.ChildrenService' in your configuration.
+
+2020-03-09 15:03:53,280 INFO org.springframework.boot.StartupInfoLogger [main] Starting DemoApplication on vostro with PID 22276 (/home/brayan/Escritorio/Project/Ing-Brayan-Martinez/Java-SpringBoot-Example/Java-SpringBoot-WebService/Java-SpringBoot-Rest/target/classes started by brayan in /home/brayan/Escritorio/Project/Ing-Brayan-Martinez/Java-SpringBoot-Example/Java-SpringBoot-WebService/Java-SpringBoot-Rest)
+2020-03-09 15:03:53,283 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-03-09 15:03:54,601 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 15:03:54,924 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2020-03-09 15:03:54,933 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2020-03-09 15:03:54,934 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2020-03-09 15:03:54,934 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-09 15:03:55,003 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2020-03-09 15:03:55,004 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1614 ms
+2020-03-09 15:03:55,863 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-09 15:03:56,350 INFO org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: 3ee3749b-2b5c-4227-bf7a-349e089e0cd1
+
+2020-03-09 15:03:56,496 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@23f5008a, org.springframework.security.web.context.SecurityContextPersistenceFilter@2c0798bd, org.springframework.security.web.header.HeaderWriterFilter@58b97c15, org.springframework.security.web.csrf.CsrfFilter@316d30ad, org.springframework.security.web.authentication.logout.LogoutFilter@255ed8e4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@ce655b9, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2b9b17ce, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@44abdb1f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@65a48cab, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@671d97bc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5238896f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@62108cd3, org.springframework.security.web.session.SessionManagementFilter@27d98bef, org.springframework.security.web.access.ExceptionTranslationFilter@62faf77, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@74d22ddd]
+2020-03-09 15:03:56,569 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2020-03-09 15:03:56,598 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2020-03-09 15:03:56,603 INFO org.springframework.boot.StartupInfoLogger [main] Started DemoApplication in 3.964 seconds (JVM running for 4.721)
+2020-03-09 16:59:49,610 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'

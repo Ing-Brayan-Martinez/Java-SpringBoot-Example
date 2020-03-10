@@ -56,7 +56,7 @@ public class UserServiceImpl implements UserService, UserAuditableService {
     @Override
     public Optional<UserDTO> save(UserDTO dto) {
         dto.setPassword(this.passwordEncoder.encode(dto.getPassword()));
-        return Optional.ofNullable(this.userRepository.create(this.userConvert.fromDTO(dto)))
+        return Optional.ofNullable(this.userRepository.insert(this.userConvert.fromDTO(dto)))
                 .map(entity -> this.userConvert.toDTO(entity));
     }
 

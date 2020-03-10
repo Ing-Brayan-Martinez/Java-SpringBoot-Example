@@ -8,11 +8,11 @@ import java.util.Optional;
 
 public interface ChildrenReposytory {
 
-    public Children insert(Children data);
+    Children insert(Children data);
 
-    public Children update(Children data);
+    Children update(Children data);
 
-    public Optional<Children> findById(long key);
+    Optional<Children> findById(long key);
 
-    public List<Children> findAll();
+    List<Children> findAll();
 }

@@ -17,8 +17,10 @@ package com.example.domain;
 
 
 import lombok.Data;
+import lombok.ToString;
 
 @Data
+@ToString(callSuper = true)
 public class Role extends Auditable {
 
     private long roleId;

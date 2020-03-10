@@ -26,7 +26,7 @@ public class PersonServiceImpl implements PersonService {
 
     @Override
     public Optional<PersonDTO> save(PersonDTO dto) {
-        final Person person = this.converted.fromDto(null);
+        final Person person = this.converted.fromDTO(null);
         this.repository.insert(person);
 
         //manager.sendMessage(new EmailDTO("hola", "brayanmartinez827@gmail.com", "Este es un correo de prueba"));
@@ -35,14 +35,13 @@ public class PersonServiceImpl implements PersonService {
 
     @Override
     public Optional<PersonDTO> update(PersonDTO dto) {
-        Person person = this.converted.fromDto(null);
+        Person person = this.converted.fromDTO(null);
         this.repository.update(person);
         return Optional.empty();
     }
 
     @Override
     public Optional<PersonDTO> delete(Long id) {
-        this.repository.delete(id);
         return Optional.empty();
     }
 

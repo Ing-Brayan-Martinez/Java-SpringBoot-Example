@@ -16,16 +16,16 @@
 package com.example.domain;
 
 
-import lombok.Builder;
 import lombok.Data;
+import lombok.ToString;
 
 import java.sql.Date;
 
 @Data
-@Builder
+@ToString(callSuper = true)
 public class Person extends Auditable {
 
-    private Long key;
+    private Long parsonId;
 
     private String nombre;
 
@@ -40,9 +40,5 @@ public class Person extends Auditable {
     private String telefono;
 
     private String correo;
-
-    private Date fechaRegistro;
-
-    private Date fechaModificacion;
 
 }

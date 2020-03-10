@@ -7,11 +7,11 @@ import java.util.Optional;
 
 public interface PersonReposytory {
 
-    public Person insert(Person data);
+    Person insert(Person data);
 
-    public Person update(Person data);
+    Person update(Person data);
 
-    public Optional<Person> findById(long key);
+    Optional<Person> findById(long key);
 
-    public List<Person> findAll();
+    List<Person> findAll();
 }

@@ -25,6 +25,7 @@
         <project.resources.sourceEncoding>${encoding}</project.resources.sourceEncoding>
         <java.version>11</java.version>
         <spring-cloud.version>Hoxton.SR1</spring-cloud.version>
+        <my-property>hello word from mavem</my-property>
     </properties>
 
 

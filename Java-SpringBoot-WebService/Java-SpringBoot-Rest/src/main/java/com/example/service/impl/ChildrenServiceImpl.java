@@ -22,21 +22,20 @@ public class ChildrenServiceImpl implements ChildrenService {
 
     @Override
     public Optional<ChildrenDTO> save(ChildrenDTO dto) {
-        Children data = this.factory.fromDto(null);
+        Children data = this.factory.fromDTO(null);
         this.repository.insert(data);
         return Optional.empty();
     }
 
     @Override
     public Optional<ChildrenDTO> update(ChildrenDTO dto) {
-        Children data = this.factory.fromDto(null);
+        Children data = this.factory.fromDTO(null);
         this.repository.update(data);
         return Optional.empty();
     }
 
     @Override
     public Optional<ChildrenDTO> delete(Long id) {
-        this.repository.delete(id);
         return Optional.empty();
     }
 

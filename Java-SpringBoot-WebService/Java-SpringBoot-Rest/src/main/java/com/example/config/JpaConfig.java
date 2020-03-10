@@ -26,8 +26,9 @@ public class JpaConfig {
     @Bean
     @ConfigurationProperties(prefix="spring.datasource")
     public DataSource dataSource() {
-        return DataSourceBuilder
-                .create()
+        System.out.println(env.getRequiredProperty("me.example"));
+
+        return DataSourceBuilder.create()
                 .url(env.getRequiredProperty("spring.datasource.url"))
                 .username(env.getRequiredProperty("spring.datasource.username"))
                 .password(env.getRequiredProperty("spring.datasource.password"))
@@ -35,17 +36,6 @@ public class JpaConfig {
                 .build();
     }
 
-//    @Bean
-//    @ConfigurationProperties(prefix="spring.datasource")
-//    public DataSource dataSource() {
-//        HikariDataSource ds = new HikariDataSource();
-//        ds.setJdbcUrl(env.getRequiredProperty("spring.datasource.url"));
-//        ds.setUsername(env.getRequiredProperty("spring.datasource.username"));
-//        ds.setPassword(env.getRequiredProperty("spring.datasource.password"));
-//        ds.setDriverClassName(env.getRequiredProperty("spring.datasource.driverClassName"));
-//
-//        return ds;
-//    }
 
     @Bean
     public ModelMapper modelMapper() {

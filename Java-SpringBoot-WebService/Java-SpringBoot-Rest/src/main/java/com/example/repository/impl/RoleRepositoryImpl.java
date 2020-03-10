@@ -33,8 +33,8 @@ public class RoleRepositoryImpl implements RoleRepository {
 
     @Override
     public Role insert(Role data) {
-        final StringBuilder sql = new StringBuilder("INSERT INTO role(")
-            .append(" created, is_active, updated, name, description, created_by, updated_by)")
+        final StringBuilder sql = new StringBuilder("INSERT INTO role (")
+            .append("created, is_active, updated, name, description, created_by, updated_by)")
             .append(" VALUES (DEFAULT, DEFAULT, DEFAULT, ?, ?, ?, ?);");
 
         try (Connection con = this.conn.getConnection()) {
@@ -51,6 +51,7 @@ public class RoleRepositoryImpl implements RoleRepository {
 
         } catch (SQLException ex) {
             this.log.error(ex.getMessage());
+            return null;
 
         } finally {
             this.log.info("Se ha insertado un hijo");
@@ -81,6 +82,7 @@ public class RoleRepositoryImpl implements RoleRepository {
 
         } catch (SQLException ex) {
             this.log.error(ex.getMessage());
+            return null;
 
         } finally {
             this.log.info("Se ha actualisado un hijo");
@@ -119,6 +121,7 @@ public class RoleRepositoryImpl implements RoleRepository {
 
         } catch (SQLException ex) {
             this.log.error(ex.getMessage());
+            return Optional.empty();
 
         } finally {
             this.log.info("Se ha consultado un hijo");
@@ -157,6 +160,7 @@ public class RoleRepositoryImpl implements RoleRepository {
 
         } catch (SQLException ex) {
             this.log.error(ex.getMessage());
+            return list;
 
         } finally {
             this.log.info("Se ha consultado todos los hijos");
@@ -167,7 +171,7 @@ public class RoleRepositoryImpl implements RoleRepository {
     }
 
     @Override
-    public List<Role> findByUserId(Long userId) {
+    public synchronized List<Role> findByUserId(Long userId) {
         final StringBuilder sql = getSelect()
             .append(" INNER JOIN user_role ur ON ro.role_id = ur.role_id")
             .append(" WHERE ro.is_active = 'Y' AND ur.user_id = ? ");
@@ -196,6 +200,7 @@ public class RoleRepositoryImpl implements RoleRepository {
 
         } catch (SQLException ex) {
             this.log.error(ex.getMessage());
+            return list;
 
         } finally {
             this.log.info("Se ha consultado todos los hijos");
@@ -205,7 +210,7 @@ public class RoleRepositoryImpl implements RoleRepository {
         return list;
     }
 
-    private Role findLastModified() {
+    private synchronized Role findLastModified() {
         final StringBuilder sql = getSelect()
             .append(" WHERE ro.role_id = (SELECT MAX(role_id) FROM role); ");
 
@@ -232,6 +237,7 @@ public class RoleRepositoryImpl implements RoleRepository {
 
         } catch (SQLException ex) {
             this.log.error(ex.getMessage());
+            return null;
 
         } finally {
             this.log.info("Se ha consultado un hijo");
@@ -241,7 +247,7 @@ public class RoleRepositoryImpl implements RoleRepository {
         return this.dto;
     }
 
-    private Role findLastModifiedById(Long roleId) {
+    private synchronized Role findLastModifiedById(Long roleId) {
         final StringBuilder sql = getSelect()
             .append(" WHERE ro.role_id = ? ");
 
@@ -269,6 +275,7 @@ public class RoleRepositoryImpl implements RoleRepository {
 
         } catch (SQLException ex) {
             this.log.error(ex.getMessage());
+            return null;
 
         } finally {
             this.log.info("Se ha consultado un hijo");

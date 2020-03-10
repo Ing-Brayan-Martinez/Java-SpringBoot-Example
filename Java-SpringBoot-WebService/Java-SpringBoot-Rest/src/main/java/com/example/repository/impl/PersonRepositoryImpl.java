@@ -2,6 +2,7 @@ package com.example.repository.impl;
 
 import com.example.domain.Person;
 import com.example.repository.PersonReposytory;
+import com.example.util.BooleanConverter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,22 +38,23 @@ public class PersonRepositoryImpl implements PersonReposytory {
      */
     @Override
     public Person insert(Person data) {
-
-        final String SQL_INSERT = "INSERT INTO person (nombre, apellido, fechaNacimiento, cedula, altura, telefono, " +
-                "fechaRegistro, fechaModificacion) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);";
+        final StringBuilder sql = new StringBuilder("INSERT INTO person (")
+            .append("created, is_active, updated, created_by, updated_by, ")
+            .append("nombre, apellido, fecha_nacimiento, cedula, altura, telefono, correo)")
+            .append(" VALUES (DEFAULT, DEFAULT, DEFAULT, ?, ?, ?, ?, ?, ?, ?, ?, ?);");
 
         try (Connection con = this.conn.getConnection()) {
 
-            this.ps = con.prepareStatement(SQL_INSERT);
-            this.ps.setString (1,  data.getNombre());
-            this.ps.setString (2,  data.getApellido());
-            this.ps.setObject( 3,  data.getFechaNacimiento());
-            this.ps.setString (4,  data.getCedula());
-            this.ps.setFloat  (5,  data.getAltura());
-            this.ps.setString (6,  data.getTelefono());
-            this.ps.setString (7,  data.getCorreo());
-            this.ps.setObject (8,  data.getFechaRegistro());
-            this.ps.setObject (9,  data.getFechaModificacion());
+            this.ps = con.prepareStatement(sql.toString());
+            this.ps.setLong (1,  data.getCreatedBy());
+            this.ps.setLong (2,  data.getUpdatedBy());
+            this.ps.setString (3,  data.getNombre());
+            this.ps.setString (4,  data.getApellido());
+            this.ps.setObject( 5,  data.getFechaNacimiento());
+            this.ps.setString (6,  data.getCedula());
+            this.ps.setFloat  (7,  data.getAltura());
+            this.ps.setString (8,  data.getTelefono());
+            this.ps.setString (9,  data.getCorreo());
 
 
             this.ps.executeUpdate();
@@ -60,6 +62,7 @@ public class PersonRepositoryImpl implements PersonReposytory {
 
         } catch (SQLException ex) {
             log.error(ex.getMessage());
+            return null;
 
         } finally {
             log.info("Se ha insertado una persona");
@@ -76,35 +79,40 @@ public class PersonRepositoryImpl implements PersonReposytory {
      */
     @Override
     public Person update(Person data) {
-
-        final String SQL_UPDATE = "UPDATE person SET nombre = ?, apellido = ?, fechaNacimiento = ?, cedula = ?, " +
-        "altura = ?, telefono = ?, fechaModificacion = ? WHERE person.key = ?;";
+        final StringBuilder sql = new StringBuilder("UPDATE person SET ")
+            .append("is_active = ?, updated = ?, updated_by = ?, ")
+            .append("nombre = ?, apellido = ?, fecha_nacimiento = ?, cedula = ?, ")
+            .append("altura = ?, telefono = ?, correo = ? ")
+            .append("WHERE person_id = ? ");
 
         try (Connection con = this.conn.getConnection()) {
 
-            this.ps = con.prepareStatement(SQL_UPDATE);
-            this.ps.setString(1, data.getNombre());
-            this.ps.setString(2, data.getApellido());
-            this.ps.setDate(3, data.getFechaNacimiento());
-            this.ps.setString(4, data.getCedula());
-            this.ps.setFloat(5, data.getAltura());
-            this.ps.setString(6, data.getTelefono());
-            this.ps.setString(7, data.getCorreo());
-            this.ps.setDate(8, data.getFechaModificacion());
-            this.ps.setLong(9, data.getKey());
+            this.ps = con.prepareStatement(sql.toString());
+            this.ps.setString(1,  BooleanConverter.toDatabaseColumn(data.getIsActive()));
+            this.ps.setTimestamp(2,  data.getUpdated());
+            this.ps.setLong(3,  data.getUpdatedBy());
+            this.ps.setString(4, data.getNombre());
+            this.ps.setString(5, data.getApellido());
+            this.ps.setDate(6, data.getFechaNacimiento());
+            this.ps.setString(7, data.getCedula());
+            this.ps.setFloat(8, data.getAltura());
+            this.ps.setString(9, data.getTelefono());
+            this.ps.setString(10, data.getCorreo());
+            this.ps.setLong(11, data.getParsonId());
 
             this.ps.executeUpdate();
 
 
         } catch (SQLException ex) {
             log.error(ex.getMessage());
+            return null;
 
         } finally {
             log.info("Se ha actualisado una persona");
 
         }
 
-        return findLastModifiedById(data.getKey());
+        return findLastModifiedById(data.getParsonId());
     }
 
     /**
@@ -114,9 +122,8 @@ public class PersonRepositoryImpl implements PersonReposytory {
      */
     @Override
     public synchronized Optional<Person> findById(long key) {
-
         final StringBuilder sql = getSelect()
-            .append(" WHERE p.key = ? ");
+            .append(" WHERE p.person_id = ? ");
 
         try (Connection con = this.conn.getConnection()) {
 
@@ -125,24 +132,30 @@ public class PersonRepositoryImpl implements PersonReposytory {
             this.res = this.ps.executeQuery();
 
             while (this.res.next()) {
-                this.dto = Person.builder()
-                    .key(res.getLong(1))
-                    .nombre(res.getString(2))
-                    .apellido(res.getString(3))
-                    .fechaNacimiento(res.getDate(4))
-                    .cedula(res.getString(5))
-                    .altura(res.getFloat(6))
-                    .telefono(res.getString(7))
-                    .correo(res.getString(8))
-                    .fechaRegistro(res.getDate(9))
-                    .fechaModificacion(res.getDate(10))
-                    .build();
+                final Person person = new Person();
+                person.setCreatedBy(res.getLong("created_by"));
+                person.setCreated(res.getTimestamp("created"));
+                person.setUpdatedBy(res.getLong("updated_by"));
+                person.setUpdated(res.getTimestamp("updated"));
+                person.setIsActive(BooleanConverter.toEntityAttribute(res.getString("is_active")));
+
+                person.setParsonId(res.getLong("person_id"));
+                person.setNombre(res.getString("nombre"));
+                person.setApellido(res.getString("apellido"));
+                person.setFechaNacimiento(res.getDate("fecha_nacimiento"));
+                person.setCedula(res.getString("cedula"));
+                person.setAltura(res.getFloat("altura"));
+                person.setTelefono(res.getString("telefono"));
+                person.setCorreo(res.getString("correo"));
+
+                this.dto = person;
 
             }
 
 
         } catch (SQLException ex) {
             log.error(ex.getMessage());
+            return Optional.empty();
 
         } finally {
             log.info("Se ha consultado una persona");
@@ -158,7 +171,6 @@ public class PersonRepositoryImpl implements PersonReposytory {
      */
     @Override
     public synchronized List<Person> findAll() {
-
         final StringBuilder sql = getSelect();
         final List<Person> list  = new ArrayList<>();
 
@@ -168,19 +180,21 @@ public class PersonRepositoryImpl implements PersonReposytory {
             this.res = this.ps.executeQuery();
 
             while (this.res.next()) {
+                final Person person = new Person();
+                person.setCreatedBy(res.getLong("created_by"));
+                person.setCreated(res.getTimestamp("created"));
+                person.setUpdatedBy(res.getLong("updated_by"));
+                person.setUpdated(res.getTimestamp("updated"));
+                person.setIsActive(BooleanConverter.toEntityAttribute(res.getString("is_active")));
 
-                final Person person = Person.builder()
-                    .key(res.getLong(1))
-                    .nombre(res.getString(2))
-                    .apellido(res.getString(3))
-                    .fechaNacimiento(res.getDate(4))
-                    .cedula(res.getString(5))
-                    .altura(res.getFloat(6))
-                    .telefono(res.getString(7))
-                    .correo(res.getString(8))
-                    .fechaRegistro(res.getDate(9))
-                    .fechaModificacion(res.getDate(10))
-                    .build();
+                person.setParsonId(res.getLong("person_id"));
+                person.setNombre(res.getString("nombre"));
+                person.setApellido(res.getString("apellido"));
+                person.setFechaNacimiento(res.getDate("fecha_nacimiento"));
+                person.setCedula(res.getString("cedula"));
+                person.setAltura(res.getFloat("altura"));
+                person.setTelefono(res.getString("telefono"));
+                person.setCorreo(res.getString("correo"));
 
                 list.add(person);
 
@@ -188,6 +202,7 @@ public class PersonRepositoryImpl implements PersonReposytory {
 
         } catch (SQLException ex) {
             log.error(ex.getMessage());
+            return list;
 
         } finally {
             log.info("Se ha consultado todas las personas");
@@ -197,33 +212,38 @@ public class PersonRepositoryImpl implements PersonReposytory {
         return list;
     }
 
-    private Person findLastModified() {
+    private synchronized Person findLastModified() {
         final StringBuilder sql = getSelect()
-            .append(" WHERE p.key = (SELECT MAX(key) FROM person); ");
+            .append(" WHERE p.person_id = (SELECT MAX(person_id) FROM person); ");
 
         try (Connection con = this.conn.getConnection()) {
             this.ps = con.prepareStatement(sql.toString());
             this.res = this.ps.executeQuery();
 
             while (this.res.next()) {
-                this.dto = Person.builder()
-                    .key(res.getLong(1))
-                    .nombre(res.getString(2))
-                    .apellido(res.getString(3))
-                    .fechaNacimiento(res.getDate(4))
-                    .cedula(res.getString(5))
-                    .altura(res.getFloat(6))
-                    .telefono(res.getString(7))
-                    .correo(res.getString(8))
-                    .fechaRegistro(res.getDate(9))
-                    .fechaModificacion(res.getDate(10))
-                    .build();
+                final Person person = new Person();
+                person.setCreatedBy(res.getLong("created_by"));
+                person.setCreated(res.getTimestamp("created"));
+                person.setUpdatedBy(res.getLong("updated_by"));
+                person.setUpdated(res.getTimestamp("updated"));
+                person.setIsActive(BooleanConverter.toEntityAttribute(res.getString("is_active")));
 
+                person.setParsonId(res.getLong("person_id"));
+                person.setNombre(res.getString("nombre"));
+                person.setApellido(res.getString("apellido"));
+                person.setFechaNacimiento(res.getDate("fecha_nacimiento"));
+                person.setCedula(res.getString("cedula"));
+                person.setAltura(res.getFloat("altura"));
+                person.setTelefono(res.getString("telefono"));
+                person.setCorreo(res.getString("correo"));
+
+                this.dto = person;
             }
 
 
         } catch (SQLException ex) {
             this.log.error(ex.getMessage());
+            return null;
 
         } finally {
             this.log.info("Se ha consultado la ultimo persona agregada");
@@ -233,35 +253,39 @@ public class PersonRepositoryImpl implements PersonReposytory {
         return this.dto;
     }
 
-    private Person findLastModifiedById(Long childrenId) {
+    private synchronized Person findLastModifiedById(Long childrenId) {
         final StringBuilder sql = getSelect()
-            .append(" WHERE p.key = ? ");
+            .append(" WHERE p.person_id = ? ");
 
         try (Connection con = this.conn.getConnection()) {
             this.ps = con.prepareStatement(sql.toString());
             this.ps.setLong(1, childrenId);
             this.res = this.ps.executeQuery();
 
-
             while (this.res.next()) {
-                this.dto = Person.builder()
-                    .key(res.getLong(1))
-                    .nombre(res.getString(2))
-                    .apellido(res.getString(3))
-                    .fechaNacimiento(res.getDate(4))
-                    .cedula(res.getString(5))
-                    .altura(res.getFloat(6))
-                    .telefono(res.getString(7))
-                    .correo(res.getString(8))
-                    .fechaRegistro(res.getDate(9))
-                    .fechaModificacion(res.getDate(10))
-                    .build();
+                final Person person = new Person();
+                person.setCreatedBy(res.getLong("created_by"));
+                person.setCreated(res.getTimestamp("created"));
+                person.setUpdatedBy(res.getLong("updated_by"));
+                person.setUpdated(res.getTimestamp("updated"));
+                person.setIsActive(BooleanConverter.toEntityAttribute(res.getString("is_active")));
 
+                person.setParsonId(res.getLong("person_id"));
+                person.setNombre(res.getString("nombre"));
+                person.setApellido(res.getString("apellido"));
+                person.setFechaNacimiento(res.getDate("fecha_nacimiento"));
+                person.setCedula(res.getString("cedula"));
+                person.setAltura(res.getFloat("altura"));
+                person.setTelefono(res.getString("telefono"));
+                person.setCorreo(res.getString("correo"));
+
+                this.dto = person;
             }
 
 
         } catch (SQLException ex) {
             this.log.error(ex.getMessage());
+            return null;
 
         } finally {
             this.log.info("Se ha consultado la ultimo persona modificada");
