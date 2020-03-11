@@ -24,21 +24,16 @@ public final class ChildrenController {
         @RequestParam(defaultValue = "nombre") String nombre,
         @RequestParam(defaultValue = "apellido") String apellido,
         @RequestParam(defaultValue = "fechaNacimiento") String fechaNacimiento,
-        @RequestParam(defaultValue = "tipoSangre") String tipoSangre,
-        @RequestParam(defaultValue = "documentoIdentidad") String documentoIdentidad,
-        @RequestParam(defaultValue = "KeyPersona") Integer KeyPersona
+        @RequestParam(defaultValue = "tipoSangre") String tipoSangre
     ) {
 
         final ChildrenDTO command = new ChildrenDTO();
-        command.setKey(Valores.CERO);
+        command.setChildrenId(Valores.CERO);
         command.setNombre(nombre);
         command.setApellido(apellido);
         command.setFechaNacimiento(Util.toDate(fechaNacimiento));
         command.setTipoSangre(tipoSangre);
-        command.setDocumentoIdentidad(documentoIdentidad);
-        command.setKeyPersona(KeyPersona);
-        command.setFechaRegistro(Util.geDate());
-        command.setFechaModificacion(Util.geDate());
+
 
         return this.service.save(command)
             .map(res -> new ResponseEntity<>(res, HttpStatus.OK))
@@ -47,25 +42,22 @@ public final class ChildrenController {
 
     @PutMapping("/children")
     public ResponseEntity<ChildrenDTO> updateAction(
-        @RequestParam(defaultValue = "key") Integer key,
+        @RequestParam(defaultValue = "key") Long key,
         @RequestParam(defaultValue = "nombre") String nombre,
         @RequestParam(defaultValue = "apellido") String apellido,
         @RequestParam(defaultValue = "fechaNacimiento") String fechaNacimiento,
         @RequestParam(defaultValue = "tipoSangre") String tipoSangre,
         @RequestParam(defaultValue = "documentoIdentidad") String documentoIdentidad,
-        @RequestParam(defaultValue = "KeyPersona") Integer KeyPersona
+        @RequestParam(defaultValue = "KeyPersona") Long KeyPersona
     ) {
 
         final ChildrenDTO command = new ChildrenDTO();
-        command.setKey(key);
+        command.setChildrenId(key);
         command.setNombre(nombre);
         command.setApellido(apellido);
         command.setFechaNacimiento(Util.toDate(fechaNacimiento));
         command.setTipoSangre(tipoSangre);
-        command.setDocumentoIdentidad(documentoIdentidad);
-        command.setKeyPersona(KeyPersona);
-        command.setFechaRegistro(Util.geDate());
-        command.setFechaModificacion(Util.geDate());
+        command.setPersonId(KeyPersona);
 
         return this.service.update(command)
             .map(res -> new ResponseEntity<>(res, HttpStatus.OK))

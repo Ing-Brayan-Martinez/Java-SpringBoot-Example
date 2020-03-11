@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Optional;
 
 
-public interface ChildrenReposytory {
+public interface ChildrenRepository {
 
     Children insert(Children data);
 

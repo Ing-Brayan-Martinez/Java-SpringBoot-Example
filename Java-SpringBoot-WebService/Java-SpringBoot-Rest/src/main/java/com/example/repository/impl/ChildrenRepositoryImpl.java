@@ -2,7 +2,7 @@
 package com.example.repository.impl;
 
 import com.example.domain.Children;
-import com.example.repository.ChildrenReposytory;
+import com.example.repository.ChildrenRepository;
 import com.example.util.BooleanConverter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,7 +19,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public class ChildrenRepositoryImpl implements ChildrenReposytory {
+public class ChildrenRepositoryImpl implements ChildrenRepository {
 
     //Atributos constantes.
     private final Logger log = LoggerFactory.getLogger(getClass());

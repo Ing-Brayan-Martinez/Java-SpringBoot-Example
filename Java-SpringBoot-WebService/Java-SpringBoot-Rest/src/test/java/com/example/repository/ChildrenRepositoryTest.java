@@ -17,7 +17,7 @@ import java.util.Optional;
 public class ChildrenRepositoryTest {
 
     @Autowired
-    private ChildrenReposytory childrenReposytory;
+    private ChildrenRepository childrenRepository;
 
     @Test
     public void insert() {
@@ -30,13 +30,13 @@ public class ChildrenRepositoryTest {
         person.setCreatedBy(1L);
         person.setUpdatedBy(1L);
 
-        final Children pr = this.childrenReposytory.insert(person);
+        final Children pr = this.childrenRepository.insert(person);
         Assert.isTrue(pr != null, "Has fracasado la prueba");
     }
 
     @Test
     public void update() {
-        final Optional<Children> optional = this.childrenReposytory.findById(2L);
+        final Optional<Children> optional = this.childrenRepository.findById(2L);
         Assert.isTrue(optional.isPresent(), "Has fracasado la prueba");
 
         final Children person = optional.get();
@@ -45,20 +45,20 @@ public class ChildrenRepositoryTest {
         person.setUpdated(new Timestamp(System.currentTimeMillis()));
         person.setUpdatedBy(1L);
 
-        final Children pr = this.childrenReposytory.update(person);
+        final Children pr = this.childrenRepository.update(person);
         Assert.isTrue(pr != null, "Has fracasado la prueba");
     }
 
     @Test
     public void findById() {
-        final Optional<Children> pr = this.childrenReposytory.findById(2L);
+        final Optional<Children> pr = this.childrenRepository.findById(2L);
         Assert.isTrue(pr.isPresent(), "Has fracasado la prueba");
 
     }
 
     @Test
     public void findAll() {
-        final List<Children> list = this.childrenReposytory.findAll();
+        final List<Children> list = this.childrenRepository.findAll();
         Assert.isTrue(!list.isEmpty(), "Has fracasado la prueba");
         list.forEach(System.out::println);
     }
