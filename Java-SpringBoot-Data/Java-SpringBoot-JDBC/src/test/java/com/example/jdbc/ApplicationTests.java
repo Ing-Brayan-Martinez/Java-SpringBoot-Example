@@ -1,8 +1,8 @@
 package com.example.jdbc;
 
 
-import com.example.jdbc.prueba.Student;
-import com.example.jdbc.prueba.StudentRepositoryImpl;
+import com.example.jdbc.domain.Student;
+import com.example.jdbc.repository.impl.StudentRepositoryImpl;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

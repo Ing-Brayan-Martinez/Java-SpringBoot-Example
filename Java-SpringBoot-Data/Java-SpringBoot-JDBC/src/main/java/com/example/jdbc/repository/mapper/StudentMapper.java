@@ -1,7 +1,9 @@
-package com.example.jdbc.prueba;
+package com.example.jdbc.repository.mapper;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+
+import com.example.jdbc.domain.Student;
 import org.springframework.jdbc.core.RowMapper;
 
 

@@ -1,6 +1,6 @@
-package com.example.jdbc.prueba;
+package com.example.jdbc.service.dto;
 
-public class Student {
+public class StudentDTO {
 
     private Integer age;
     private String name;

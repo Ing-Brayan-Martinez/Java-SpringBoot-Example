@@ -1,4 +1,6 @@
-package com.example.jdbc.prueba;
+package com.example.jdbc.repository;
+
+import com.example.jdbc.domain.Student;
 
 import java.util.List;
 
