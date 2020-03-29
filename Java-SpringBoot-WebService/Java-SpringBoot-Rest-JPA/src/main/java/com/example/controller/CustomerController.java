@@ -1,7 +1,7 @@
 package com.example.controller;
 
-import com.example.domain.Home;
-import com.example.service.HomeService;
+import com.example.service.CustomerService;
+import com.example.service.dto.CustomerDTO;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -11,14 +11,14 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1")
-public final class HomeRestController {
+public final class CustomerController {
 
     @Resource
-    private HomeService homeService;
+    private CustomerService customerService;
 
-    @GetMapping("/homes")
-    public List<Home> index() {
-        return homeService.findAllHomes();
+    @GetMapping("/customers")
+    public List<CustomerDTO> index() {
+        return customerService.findAll();
     }
 
 }
