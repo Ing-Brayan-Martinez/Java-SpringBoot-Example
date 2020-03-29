@@ -10,7 +10,6 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Data
 public class UserDTO {
@@ -33,11 +32,5 @@ public class UserDTO {
     private List<RoleDTO> roles = new ArrayList<>();
 
     private String token;
-
-    public Collection<? extends GrantedAuthority> getAuthorities() {
-        return this.roles.stream()
-            .map(role -> new SimpleGrantedAuthority(role.getName()))
-            .collect(Collectors.toList());
-    }
 
 }
