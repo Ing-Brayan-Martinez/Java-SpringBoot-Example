@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Java-SpringBoot-Security/Java-SpringBoot-ApiKey" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Java-SpringBoot-Security/Java-SpringBoot-Basic" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Java-SpringBoot-Security/Java-SpringBoot-JWT" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Java-SpringBoot-Security/Java-SpringBoot-LDPA" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Java-SpringBoot-WebService/Java-SpringBoot-HATEOAS" vcs="Git" />
+  </component>
+</project>
