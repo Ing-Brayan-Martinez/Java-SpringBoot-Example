@@ -4,22 +4,20 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.example</groupId>
-    <artifactId>Java-SpringBoot-JPA</artifactId>
+    <artifactId>ecommerce-web-mvc</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>${artifactId}</name>
-    <description>Demo project for Spring Boot</description>
+    <description>Ejemplo de una Web App con Spring MVC</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.1.0.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath/>
     </parent>
 
-    <!-- Variables globales -->
     <properties>
-        <!-- Java -->
         <maven.version>3.3.9</maven.version>
         <encoding>UTF-8</encoding>
         <project.build.sourceEncoding>${encoding}</project.build.sourceEncoding>

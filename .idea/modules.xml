@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Ecommerce-Android.iml" filepath="$PROJECT_DIR$/.idea/modules/Ecommerce-Android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Web-App/Ecommerce-Web-MVC/Ecommerce-Web-MVC.iml" filepath="$PROJECT_DIR$/Web-App/Ecommerce-Web-MVC/Ecommerce-Web-MVC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Web-App/Ecommerce-Web-Vaadin/Ecommerce-Web-Vaadin.iml" filepath="$PROJECT_DIR$/Web-App/Ecommerce-Web-Vaadin/Ecommerce-Web-Vaadin.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Java-SpringBoot-Example.iml" filepath="$PROJECT_DIR$/.idea/Java-SpringBoot-Example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Services/Order/Order-API/Order-API.iml" filepath="$PROJECT_DIR$/Services/Order/Order-API/Order-API.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Services/Product/Product-API/Product-API.iml" filepath="$PROJECT_DIR$/Services/Product/Product-API/Product-API.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Services/Security/Security-API/Security-API.iml" filepath="$PROJECT_DIR$/Services/Security/Security-API/Security-API.iml" />
     </modules>
   </component>
 </project>

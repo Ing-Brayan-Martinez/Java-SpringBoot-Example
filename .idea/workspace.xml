@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="343b01ef-753e-4c2c-a868-533068eb613a" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Java-SpringBoot-Example" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Mobile-App/Ecommerce-Android" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.13818479" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Web-App/Ecommerce-Web-Vaadin" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="466" y="154" width="424" height="482" key="FileChooserDialogImpl" timestamp="1596647622546">
+      <screen x="0" y="25" width="1366" height="743" />
+    </state>
+    <state x="466" y="154" width="424" height="482" key="FileChooserDialogImpl/0.25.1366.743@0.25.1366.743" timestamp="1596647622546" />
+    <state x="306" y="99" width="733" height="591" key="NewModule_or_Project.wizard" timestamp="1596647519229">
+      <screen x="0" y="25" width="1366" height="743" />
+    </state>
+    <state x="306" y="99" width="733" height="591" key="NewModule_or_Project.wizard/0.25.1366.743@0.25.1366.743" timestamp="1596647519229" />
+    <state x="166" y="25" width="1024" height="741" key="SettingsEditor" timestamp="1596648015727">
+      <screen x="0" y="25" width="1366" height="743" />
+    </state>
+    <state x="166" y="25" width="1024" height="741" key="SettingsEditor/0.25.1366.743@0.25.1366.743" timestamp="1596648015727" />
+    <state x="6" y="123" width="1335" height="542" key="new project wizard" timestamp="1596647625521">
+      <screen x="0" y="25" width="1366" height="743" />
+    </state>
+    <state x="6" y="123" width="1335" height="542" key="new project wizard/0.25.1366.743@0.25.1366.743" timestamp="1596647625521" />
+  </component>
+</project>
