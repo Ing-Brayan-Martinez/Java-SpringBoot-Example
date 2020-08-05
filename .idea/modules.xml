@@ -2,13 +2,17 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Ecommerce-Android.iml" filepath="$PROJECT_DIR$/.idea/modules/Ecommerce-Android.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Web-App/Ecommerce-Web-MVC/Ecommerce-Web-MVC.iml" filepath="$PROJECT_DIR$/Web-App/Ecommerce-Web-MVC/Ecommerce-Web-MVC.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Web-App/Ecommerce-Web-Vaadin/Ecommerce-Web-Vaadin.iml" filepath="$PROJECT_DIR$/Web-App/Ecommerce-Web-Vaadin/Ecommerce-Web-Vaadin.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/Java-SpringBoot-Example.iml" filepath="$PROJECT_DIR$/.idea/Java-SpringBoot-Example.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Services/Order/Order-API/Order-API.iml" filepath="$PROJECT_DIR$/Services/Order/Order-API/Order-API.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Services/Product/Product-API/Product-API.iml" filepath="$PROJECT_DIR$/Services/Product/Product-API/Product-API.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Services/Security/Security-API/Security-API.iml" filepath="$PROJECT_DIR$/Services/Security/Security-API/Security-API.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java-SpringBoot-Example.iml" filepath="$PROJECT_DIR$/Java-SpringBoot-Example.iml" group="Java-SpringBoot-Example" />
+      <module fileurl="file://$PROJECT_DIR$/Services/Order-API/Order-API.iml" filepath="$PROJECT_DIR$/Services/Order-API/Order-API.iml" group="Java-SpringBoot-Example/Services/Order-API" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Services/Order-API/Order-API_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Services/Order-API/Order-API_main.iml" group="Java-SpringBoot-Example/Services/Order-API" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Services/Order-API/Order-API_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Services/Order-API/Order-API_test.iml" group="Java-SpringBoot-Example/Services/Order-API" />
+      <module fileurl="file://$PROJECT_DIR$/Services/Product-API/Product-API.iml" filepath="$PROJECT_DIR$/Services/Product-API/Product-API.iml" group="Java-SpringBoot-Example/Services/Product-API" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Services/Product-API/Product-API_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Services/Product-API/Product-API_main.iml" group="Java-SpringBoot-Example/Services/Product-API" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Services/Product-API/Product-API_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Services/Product-API/Product-API_test.iml" group="Java-SpringBoot-Example/Services/Product-API" />
+      <module fileurl="file://$PROJECT_DIR$/Services/Security-API/Security-API.iml" filepath="$PROJECT_DIR$/Services/Security-API/Security-API.iml" group="Java-SpringBoot-Example/Services/Security-API" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Services/Security-API/Security-API_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Services/Security-API/Security-API_main.iml" group="Java-SpringBoot-Example/Services/Security-API" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Services/Security-API/Security-API_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Services/Security-API/Security-API_test.iml" group="Java-SpringBoot-Example/Services/Security-API" />
+      <module fileurl="file://$PROJECT_DIR$/Services/Services.iml" filepath="$PROJECT_DIR$/Services/Services.iml" group="Java-SpringBoot-Example/Services" />
     </modules>
   </component>
 </project>
