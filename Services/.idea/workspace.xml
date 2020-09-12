@@ -5,12 +5,15 @@
       <change afterPath="$PROJECT_DIR$/../Mobile-App/Ecommerce-Android-App/.idea/codeStyles/Project.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Mobile-App/Ecommerce-Android-App/.idea/compiler.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Mobile-App/Ecommerce-Android-App/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.gradle/6.4.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Web-App/.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile-App/.editorconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.gradle/6.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.4.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.gradle/6.4.1/executionHistory/executionHistory.lock" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../.gradle/6.4.1/fileChanges/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.4.1/fileChanges/last-build.bin" afterDir="false" />
@@ -31,6 +34,8 @@
       <change beforePath="$PROJECT_DIR$/../.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.gradle/vcs-1/gc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules/Services/Order-API/Java-SpringBoot-Example.Services.Order-API.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules/Services/Order-API/Java-SpringBoot-Example.Services.Order-API.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules/Services/Product-API/Java-SpringBoot-Example.Services.Product-API.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules/Services/Product-API/Java-SpringBoot-Example.Services.Product-API.main.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/modules/Services/Security-API/Java-SpringBoot-Example.Services.Security-API.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules/Services/Security-API/Java-SpringBoot-Example.Services.Security-API.main.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Mobile-App/Ecommerce-Android/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile-App/Ecommerce-Android-App/.gitignore" afterDir="false" />
@@ -192,6 +197,7 @@
       <change beforePath="$PROJECT_DIR$/suggestions/Java-SpringBoot-Kafka-Producer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ECommerce-Suggestions-API/Java-SpringBoot-Kafka-Producer/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/suggestions/Java-SpringBoot-Kafka-Producer/src/test/java/com/intelixcloudmessenger/ws/TestMainVerticle.java" beforeDir="false" afterPath="$PROJECT_DIR$/ECommerce-Suggestions-API/Java-SpringBoot-Kafka-Producer/src/test/java/com/intelixcloudmessenger/ws/TestMainVerticle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
@@ -238,7 +244,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599890413253</updated>
-      <workItem from="1599890420368" duration="390000" />
+      <workItem from="1599890420368" duration="695000" />
     </task>
     <servers />
   </component>
