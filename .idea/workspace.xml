@@ -7,9 +7,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ce9d077-851d-4e7f-a944-4ead42d98277" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Services/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/ECommerce-Order-API/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Java-ECommerce-Architecture-Example.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Java-ECommerce-Architecture-Example.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Services/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-SpringBoot-Example.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile-App/Mobile-App.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/.gradle/6.4.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/.gradle/6.4.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/.gradle/6.4.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/.gradle/6.4.1/fileContent/fileContent.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/.gradle/6.4.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/.gradle/6.4.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/.gradle/6.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/.gradle/6.4.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/.gradle/6.4.1/javaCompile/classAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/.gradle/6.4.1/javaCompile/jarAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/.gradle/6.4.1/javaCompile/javaCompile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/.gradle/6.4.1/javaCompile/taskHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/.gradle/checksums/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/.gradle/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/ECommerce-Order-API/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Order-API/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Services.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Services/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,17 +86,7 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Java-SpringBoot-Example" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Java-SpringBoot-Example" type="f1a62948:ProjectNode" />
-                <item name="Services" type="2d1252cf:ModuleNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -94,7 +119,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Services" />
     <property name="not.eligible.for.single.variant.sync" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.13818479" />
@@ -137,6 +162,8 @@
       <workItem from="1596659991614" duration="159000" />
       <workItem from="1596660158846" duration="1018000" />
       <workItem from="1599889819030" duration="1631000" />
+      <workItem from="1599891546989" duration="380000" />
+      <workItem from="1599926661502" duration="657000" />
     </task>
     <task id="LOCAL-00001" summary="Transformacion del repositorio">
       <created>1599891137217</created>
@@ -145,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599891137217</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Transformacion del repositorio">
+      <created>1599891679497</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1599891679497</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,13 +225,14 @@
       <screen x="0" y="25" width="1366" height="743" />
     </state>
     <state x="300" y="89" width="756" height="612" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.25.1366.743@0.25.1366.743" timestamp="1596658905678" />
-    <state x="0" y="95" width="1356" height="600" key="CommitChangelistDialog2" timestamp="1599891134050">
+    <state x="0" y="95" width="1356" height="600" key="CommitChangelistDialog2" timestamp="1599891678508">
       <screen x="0" y="24" width="1366" height="744" />
     </state>
-    <state x="0" y="95" width="1356" height="600" key="CommitChangelistDialog2/0.24.1366.744@0.24.1366.744" timestamp="1599891134050" />
-    <state x="466" y="154" width="424" height="482" key="FileChooserDialogImpl" timestamp="1596660192947">
-      <screen x="0" y="25" width="1366" height="743" />
+    <state x="0" y="95" width="1356" height="600" key="CommitChangelistDialog2/0.24.1366.744@0.24.1366.744" timestamp="1599891678508" />
+    <state x="466" y="153" width="424" height="482" key="FileChooserDialogImpl" timestamp="1599926961535">
+      <screen x="0" y="24" width="1366" height="744" />
     </state>
+    <state x="466" y="153" width="424" height="482" key="FileChooserDialogImpl/0.24.1366.744@0.24.1366.744" timestamp="1599926961535" />
     <state x="466" y="154" width="424" height="482" key="FileChooserDialogImpl/0.25.1366.743@0.25.1366.743" timestamp="1596660192947" />
     <state width="1324" height="350" key="GridCell.Tab.0.bottom" timestamp="1596661025255">
       <screen x="0" y="25" width="1366" height="743" />
@@ -219,15 +254,15 @@
       <screen x="0" y="25" width="1366" height="743" />
     </state>
     <state x="266" y="142" width="824" height="506" key="IDE.errors.dialog/0.25.1366.743@0.25.1366.743" timestamp="1596658914525" />
-    <state x="30" y="24" width="1336" height="741" key="SettingsEditor" timestamp="1599890510756">
+    <state x="30" y="24" width="1024" height="742" key="SettingsEditor" timestamp="1599926745216">
       <screen x="0" y="24" width="1366" height="744" />
     </state>
-    <state x="30" y="24" key="SettingsEditor/0.24.1366.744@0.24.1366.744" timestamp="1599890510756" />
+    <state x="30" y="24" width="1024" height="742" key="SettingsEditor/0.24.1366.744@0.24.1366.744" timestamp="1599926745216" />
     <state x="30" y="25" width="1336" height="741" key="SettingsEditor/0.25.1366.743@0.25.1366.743" timestamp="1596660692477" />
-    <state x="278" y="132" width="800" height="526" key="Vcs.Push.Dialog.v2" timestamp="1599891142392">
+    <state x="278" y="132" width="800" height="526" key="Vcs.Push.Dialog.v2" timestamp="1599891696106">
       <screen x="0" y="24" width="1366" height="744" />
     </state>
-    <state x="278" y="132" width="800" height="526" key="Vcs.Push.Dialog.v2/0.24.1366.744@0.24.1366.744" timestamp="1599891142392" />
+    <state x="278" y="132" width="800" height="526" key="Vcs.Push.Dialog.v2/0.24.1366.744@0.24.1366.744" timestamp="1599891696106" />
     <state x="347" y="176" width="672" height="677" key="run.anything.popup" timestamp="1596659719177">
       <screen x="0" y="25" width="1366" height="743" />
     </state>

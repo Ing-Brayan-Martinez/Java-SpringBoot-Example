@@ -1,10 +1,10 @@
 rootProject.name = 'Services'
 
-include 'Order-API'
-findProject(':Order-API')?.name = 'Order-API'
+include 'ECommerce-Order-API'
+findProject(':ECommerce-Order-API')?.name = 'ECommerce-Order-API'
 
-include 'Product-API'
-findProject(':Product-API')?.name = 'Product-API'
+include 'ECommerce-Product-API'
+findProject(':ECommerce-Product-API')?.name = 'ECommerce-Product-API'
 
-include 'Security-API'
-findProject(':Security-API')?.name = 'Security-API'
+include 'ECommerce-Security-API'
+findProject(':ECommerce-Security-API')?.name = 'ECommerce-Security-API'
