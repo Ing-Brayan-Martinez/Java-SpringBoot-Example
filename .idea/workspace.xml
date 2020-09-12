@@ -5,45 +5,90 @@
       <config />
     </shared>
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="9ce9d077-851d-4e7f-a944-4ead42d98277" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Services/ECommerce-Order-API/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/app/local.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/.gradle/6.4.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/.gradle/6.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/.gradle/6.5/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/.idea/modules/ECommerce-Order-API.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/.idea/modules/ECommerce-Product-API.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/.idea/modules/ECommerce-Security-API.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web-App/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web-App/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Java-ECommerce-Architecture-Example.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Java-ECommerce-Architecture-Example.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java-SpringBoot-Example.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile-App/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/.editorconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/.idea/jarRepositories.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobile-App/Mobile-App.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/.gradle/6.4.1/executionHistory/executionHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/.gradle/6.4.1/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/.gradle/6.4.1/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/.gradle/6.4.1/fileContent/fileContent.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/.gradle/6.4.1/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/.gradle/6.4.1/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/.gradle/6.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/.gradle/6.4.1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/.gradle/6.4.1/javaCompile/classAnalysis.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/.gradle/6.4.1/javaCompile/jarAnalysis.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/.gradle/6.4.1/javaCompile/javaCompile.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/.gradle/6.4.1/javaCompile/taskHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/.gradle/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/.gradle/checksums/md5-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/.gradle/checksums/sha1-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/.gradle/vcs-1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/app/src/androidTest/java/com/example/listviewexample/ExampleInstrumentedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/app/src/androidTest/java/com/example/listviewexample/ExampleInstrumentedTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/ECommerce-Order-API/.gradle/6.4.1/fileChanges/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Services/.gradle/6.4.1/fileChanges/last-build.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/ECommerce-Order-API/.gradle/6.4.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/ECommerce-Order-API/.gradle/6.4.1/gc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Services/.gradle/6.4.1/gc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/ECommerce-Order-API/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/ECommerce-Order-API/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/ECommerce-Order-API/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/ECommerce-Order-API/.gradle/vcs-1/gc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Services/.gradle/6.5/gc.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Services/ECommerce-Order-API/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Order-API/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Services.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/ECommerce-Order-API/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/ECommerce-Order-API/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/ECommerce-Order-API/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/ECommerce-Order-API/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/ECommerce-Order-API/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/ECommerce-Product-API/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Product-API/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/ECommerce-Product-API/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/ECommerce-Product-API/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/ECommerce-Product-API/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/ECommerce-Product-API/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/ECommerce-Security-API/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Security-API/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/ECommerce-Security-API/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/ECommerce-Security-API/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/ECommerce-Security-API/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/ECommerce-Security-API/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Services/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Services/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Services/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Services/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,9 +138,6 @@
       </state>
     </system>
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="Java-SpringBoot-Example" />
-  </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
@@ -110,16 +152,23 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Services" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="not.eligible.for.single.variant.sync" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.13818479" />
@@ -127,27 +176,68 @@
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App" />
+      <recent name="$PROJECT_DIR$/Services" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Services" />
       <recent name="$PROJECT_DIR$/Web-App" />
       <recent name="$PROJECT_DIR$/Mobile-App" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Services" />
-    </key>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
+  <component name="RunManager" selected="Docker.ECommerce-Security-API/Dockerfile">
+    <configuration name="ECommerce-Order-API/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="buildCliOptions" value="" />
+          <option name="command" value="" />
+          <option name="containerName" value="" />
+          <option name="entrypoint" value="" />
+          <option name="imageTag" value="" />
+          <option name="commandLineOptions" value="" />
+          <option name="sourceFilePath" value="Services/ECommerce-Order-API/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="ECommerce-Product-API/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="buildCliOptions" value="" />
+          <option name="command" value="" />
+          <option name="containerName" value="" />
+          <option name="entrypoint" value="" />
+          <option name="imageTag" value="" />
+          <option name="commandLineOptions" value="" />
+          <option name="sourceFilePath" value="Services/ECommerce-Product-API/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="ECommerce-Security-API/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="buildCliOptions" value="" />
+          <option name="command" value="" />
+          <option name="containerName" value="" />
+          <option name="entrypoint" value="" />
+          <option name="imageTag" value="" />
+          <option name="commandLineOptions" value="" />
+          <option name="sourceFilePath" value="Services/ECommerce-Security-API/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
       <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
+        <item itemvalue="Docker.ECommerce-Security-API/Dockerfile" />
+        <item itemvalue="Docker.ECommerce-Order-API/Dockerfile" />
+        <item itemvalue="Docker.ECommerce-Product-API/Dockerfile" />
       </list>
-    </option>
+    </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -163,7 +253,8 @@
       <workItem from="1596660158846" duration="1018000" />
       <workItem from="1599889819030" duration="1631000" />
       <workItem from="1599891546989" duration="380000" />
-      <workItem from="1599926661502" duration="657000" />
+      <workItem from="1599926661502" duration="1988000" />
+      <workItem from="1599934922300" duration="31000" />
     </task>
     <task id="LOCAL-00001" summary="Transformacion del repositorio">
       <created>1599891137217</created>
@@ -179,11 +270,31 @@
       <option name="project" value="LOCAL" />
       <updated>1599891679497</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Transformacion del repositorio">
+      <created>1599927328294</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1599927328294</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -196,6 +307,18 @@
       <screen x="0" y="25" width="1366" height="743" />
     </state>
     <state x="273" y="57" width="800" height="675" key="#Docker/0.25.1366.743@0.25.1366.743" timestamp="1596661108675" />
+    <state x="392" y="24" width="572" height="742" key="#ECommerce-Order-API/Dockerfile" timestamp="1599934954385">
+      <screen x="0" y="24" width="1366" height="744" />
+    </state>
+    <state x="392" y="24" width="572" height="742" key="#ECommerce-Order-API/Dockerfile/0.24.1366.744@0.24.1366.744" timestamp="1599934954385" />
+    <state x="392" y="24" width="572" height="742" key="#ECommerce-Product-API/Dockerfile" timestamp="1599934951715">
+      <screen x="0" y="24" width="1366" height="744" />
+    </state>
+    <state x="392" y="24" width="572" height="742" key="#ECommerce-Product-API/Dockerfile/0.24.1366.744@0.24.1366.744" timestamp="1599934951715" />
+    <state x="392" y="24" width="572" height="742" key="#ECommerce-Security-API/Dockerfile" timestamp="1599934956933">
+      <screen x="0" y="24" width="1366" height="744" />
+    </state>
+    <state x="392" y="24" width="572" height="742" key="#ECommerce-Security-API/Dockerfile/0.24.1366.744@0.24.1366.744" timestamp="1599934956933" />
     <state x="382" y="25" width="592" height="741" key="#Order-API/Dockerfile" timestamp="1596661132058">
       <screen x="0" y="25" width="1366" height="743" />
     </state>
@@ -225,14 +348,14 @@
       <screen x="0" y="25" width="1366" height="743" />
     </state>
     <state x="300" y="89" width="756" height="612" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.25.1366.743@0.25.1366.743" timestamp="1596658905678" />
-    <state x="0" y="95" width="1356" height="600" key="CommitChangelistDialog2" timestamp="1599891678508">
+    <state x="0" y="95" width="1356" height="600" key="CommitChangelistDialog2" timestamp="1599927327527">
       <screen x="0" y="24" width="1366" height="744" />
     </state>
-    <state x="0" y="95" width="1356" height="600" key="CommitChangelistDialog2/0.24.1366.744@0.24.1366.744" timestamp="1599891678508" />
-    <state x="466" y="153" width="424" height="482" key="FileChooserDialogImpl" timestamp="1599926961535">
+    <state x="0" y="95" width="1356" height="600" key="CommitChangelistDialog2/0.24.1366.744@0.24.1366.744" timestamp="1599927327527" />
+    <state x="466" y="153" width="424" height="482" key="FileChooserDialogImpl" timestamp="1599928318285">
       <screen x="0" y="24" width="1366" height="744" />
     </state>
-    <state x="466" y="153" width="424" height="482" key="FileChooserDialogImpl/0.24.1366.744@0.24.1366.744" timestamp="1599926961535" />
+    <state x="466" y="153" width="424" height="482" key="FileChooserDialogImpl/0.24.1366.744@0.24.1366.744" timestamp="1599928318285" />
     <state x="466" y="154" width="424" height="482" key="FileChooserDialogImpl/0.25.1366.743@0.25.1366.743" timestamp="1596660192947" />
     <state width="1324" height="350" key="GridCell.Tab.0.bottom" timestamp="1596661025255">
       <screen x="0" y="25" width="1366" height="743" />
@@ -254,15 +377,23 @@
       <screen x="0" y="25" width="1366" height="743" />
     </state>
     <state x="266" y="142" width="824" height="506" key="IDE.errors.dialog/0.25.1366.743@0.25.1366.743" timestamp="1596658914525" />
-    <state x="30" y="24" width="1024" height="742" key="SettingsEditor" timestamp="1599926745216">
+    <state x="321" y="98" width="713" height="594" key="NewModule_or_Project.wizard" timestamp="1599928322904">
       <screen x="0" y="24" width="1366" height="744" />
     </state>
-    <state x="30" y="24" width="1024" height="742" key="SettingsEditor/0.24.1366.744@0.24.1366.744" timestamp="1599926745216" />
+    <state x="321" y="98" width="713" height="594" key="NewModule_or_Project.wizard/0.24.1366.744@0.24.1366.744" timestamp="1599928322904" />
+    <state x="30" y="24" width="1024" height="742" key="SettingsEditor" timestamp="1599931882413">
+      <screen x="0" y="24" width="1366" height="744" />
+    </state>
+    <state x="30" y="24" width="1024" height="742" key="SettingsEditor/0.24.1366.744@0.24.1366.744" timestamp="1599931882413" />
     <state x="30" y="25" width="1336" height="741" key="SettingsEditor/0.25.1366.743@0.25.1366.743" timestamp="1596660692477" />
     <state x="278" y="132" width="800" height="526" key="Vcs.Push.Dialog.v2" timestamp="1599891696106">
       <screen x="0" y="24" width="1366" height="744" />
     </state>
     <state x="278" y="132" width="800" height="526" key="Vcs.Push.Dialog.v2/0.24.1366.744@0.24.1366.744" timestamp="1599891696106" />
+    <state x="99" y="24" width="1157" height="742" key="new project wizard" timestamp="1599928308708">
+      <screen x="0" y="24" width="1366" height="744" />
+    </state>
+    <state x="99" y="24" width="1157" height="742" key="new project wizard/0.24.1366.744@0.24.1366.744" timestamp="1599928308708" />
     <state x="347" y="176" width="672" height="677" key="run.anything.popup" timestamp="1596659719177">
       <screen x="0" y="25" width="1366" height="743" />
     </state>
