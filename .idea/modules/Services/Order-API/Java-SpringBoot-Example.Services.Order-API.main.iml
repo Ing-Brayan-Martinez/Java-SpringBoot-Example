@@ -35,6 +35,11 @@
     <facet type="web" name="Web">
       <configuration>
         <webroots />
+        <sourceRoots>
+          <root url="file://$MODULE_DIR$/../../../../Services/Order-API/build/generated/sources/annotationProcessor/java/main" />
+          <root url="file://$MODULE_DIR$/../../../../Services/Order-API/src/main/java" />
+          <root url="file://$MODULE_DIR$/../../../../Services/Order-API/src/main/resources" />
+        </sourceRoots>
       </configuration>
     </facet>
   </component>

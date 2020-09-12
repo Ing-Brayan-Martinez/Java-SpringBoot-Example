@@ -7,143 +7,227 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ce9d077-851d-4e7f-a944-4ead42d98277" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/6.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.4.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.4.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.4.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.4.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.4.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/.gradle/6.4.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web-App/.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile-App/.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Services/.gradle/6.4.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.4.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.4.1/fileChanges/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Services/.gradle/6.4.1/fileChanges/last-build.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.4.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Services/.gradle/6.4.1/fileContent/fileContent.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Services/.gradle/6.4.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Services/.gradle/6.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Services/.gradle/6.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.4.1/gc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Services/.gradle/6.4.1/gc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Services/.gradle/6.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.4.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Services/.gradle/6.4.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Services/.gradle/6.4.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Services/.gradle/6.4.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Services/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Services/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Services/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Services/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Services/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Services/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Services/.gradle/vcs-1/gc.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__antlr_antlr_2_7_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_classmate_1_5_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_annotations_2_11_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_core_2_11_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_databind_2_11_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_11_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_11_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_module_jackson_module_parameter_names_2_11_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_jayway_jsonpath_json_path_2_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_sun_activation_jakarta_activation_1_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_sun_istack_istack_commons_runtime_3_0_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_zaxxer_HikariCP_3_4_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_codec_commons_codec_1_14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_github_classgraph_classgraph_4_1_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_springfox_springfox_bean_validators_2_10_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_springfox_springfox_core_2_10_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_springfox_springfox_data_rest_2_10_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_springfox_springfox_schema_2_10_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_springfox_springfox_spi_2_10_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_springfox_springfox_spring_web_2_10_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_springfox_springfox_spring_webmvc_2_10_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_springfox_springfox_swagger2_2_10_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_springfox_springfox_swagger_common_2_10_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_springfox_springfox_swagger_ui_2_10_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_swagger_swagger_annotations_1_5_20.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_swagger_swagger_models_1_5_20.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__jakarta_activation_jakarta_activation_api_1_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__jakarta_persistence_jakarta_persistence_api_2_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__jakarta_transaction_jakarta_transaction_api_1_3_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_bytebuddy_byte_buddy_1_10_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_bytebuddy_byte_buddy_agent_1_10_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_minidev_accessors_smart_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_minidev_json_smart_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_logging_log4j_log4j_api_2_13_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_logging_log4j_log4j_to_slf4j_2_13_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_core_9_0_36.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_36.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apiguardian_apiguardian_api_1_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_aspectj_aspectjweaver_1_9_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_assertj_assertj_core_3_16_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_atteo_evo_inflector_1_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bouncycastle_bcpkix_jdk15on_1_63.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bouncycastle_bcprov_jdk15on_1_63.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_dom4j_dom4j_2_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_glassfish_jakarta_el_3_0_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_glassfish_jaxb_jaxb_runtime_2_3_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_glassfish_jaxb_txw2_2_3_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hibernate_common_hibernate_commons_annotations_5_1_0_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hibernate_hibernate_core_5_4_17_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jasig_cas_client_cas_client_core_3_6_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_javassist_javassist_3_24_0_GA.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jboss_jandex_2_1_3_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jboss_logging_jboss_logging_3_4_1_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_annotations_19_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_5_6_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_api_5_6_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_engine_5_6_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_params_5_6_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_platform_junit_platform_commons_1_6_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_platform_junit_platform_engine_1_6_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mapstruct_mapstruct_1_3_1_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mockito_mockito_core_3_3_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mockito_mockito_junit_jupiter_3_3_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_objenesis_objenesis_2_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_ow2_asm_asm_5_0_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_postgresql_postgresql_42_2_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_projectlombok_lombok_1_18_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_skyscreamer_jsonassert_1_5_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_jul_to_slf4j_1_7_30.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_slf4j_api_1_7_30.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_2_3_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_autoconfigure_2_3_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_configuration_processor_2_3_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_devtools_2_3_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_2_3_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_aop_2_3_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_data_jpa_2_3_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_hateoas_2_3_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_jdbc_2_3_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_json_2_3_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_logging_2_3_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_security_2_3_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_test_2_3_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_tomcat_2_3_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_web_2_3_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_test_2_3_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_test_autoconfigure_2_3_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_data_spring_data_commons_2_3_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_data_spring_data_jpa_2_3_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_data_spring_data_rest_core_3_3_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_data_spring_data_rest_webmvc_3_3_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_hateoas_spring_hateoas_1_1_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_plugin_spring_plugin_core_2_0_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_plugin_spring_plugin_metadata_2_0_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_security_spring_security_cas_5_3_3_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_security_spring_security_config_5_3_3_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_security_spring_security_core_5_3_3_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_security_spring_security_test_5_3_3_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_security_spring_security_web_5_3_3_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_aop_5_2_7_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_aspects_5_2_7_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_beans_5_2_7_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_context_5_2_7_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_core_5_2_7_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_expression_5_2_7_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_jcl_5_2_7_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_jdbc_5_2_7_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_orm_5_2_7_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_test_5_2_7_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_tx_5_2_7_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_web_5_2_7_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_webmvc_5_2_7_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_xmlunit_xmlunit_core_2_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_yaml_snakeyaml_1_26.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Services/Order-API/Java-SpringBoot-Example.Services.Order-API.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Services/Order-API/Java-SpringBoot-Example.Services.Order-API.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Services/Product-API/Java-SpringBoot-Example.Services.Product-API.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Services/Product-API/Java-SpringBoot-Example.Services.Product-API.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Services/Security-API/Java-SpringBoot-Example.Services.Security-API.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Services/Security-API/Java-SpringBoot-Example.Services.Security-API.main.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android/app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/app/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android/app/fabric.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/app/fabric.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android/app/google-services.json" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/app/google-services.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android/app/proguard-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/app/proguard-rules.pro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android/app/src/androidTest/java/com/example/listviewexample/ExampleInstrumentedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/app/src/androidTest/java/com/example/listviewexample/ExampleInstrumentedTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android/app/src/main/java/com/example/listviewexample/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/app/src/main/java/com/example/listviewexample/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android/app/src/main/java/com/example/listviewexample/ui/main/MainFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/app/src/main/java/com/example/listviewexample/ui/main/MainFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android/app/src/main/java/com/example/listviewexample/ui/main/MainViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/app/src/main/java/com/example/listviewexample/ui/main/MainViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android/app/src/main/res/layout/main_activity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/app/src/main/res/layout/main_activity.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android/app/src/main/res/layout/main_fragment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/app/src/main/res/layout/main_fragment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android/app/src/test/java/com/example/listviewexample/ExampleUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/app/src/test/java/com/example/listviewexample/ExampleUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile-App/Ecommerce-Android-App/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order-API/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Order-API/.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order-API/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Order-API/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order-API/.gradle/6.4.1/fileChanges/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Order-API/.gradle/6.4.1/fileChanges/last-build.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order-API/.gradle/6.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Order-API/.gradle/6.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order-API/.gradle/6.4.1/gc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Order-API/.gradle/6.4.1/gc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order-API/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Order-API/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order-API/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Order-API/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order-API/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Order-API/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order-API/.gradle/vcs-1/gc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Order-API/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order-API/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Order-API/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order-API/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Order-API/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order-API/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Order-API/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order-API/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Order-API/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order-API/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Order-API/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order-API/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Order-API/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order-API/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Order-API/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order-API/src/main/java/com/example/JpaThymeleafApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Order-API/src/main/java/com/example/JpaThymeleafApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order-API/src/main/java/com/example/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Order-API/src/main/java/com/example/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order-API/src/main/java/com/example/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Order-API/src/main/java/com/example/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order-API/src/main/java/com/example/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Order-API/src/main/java/com/example/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order-API/src/main/java/com/example/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Order-API/src/main/java/com/example/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order-API/src/main/java/com/example/web/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Order-API/src/main/java/com/example/web/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order-API/src/main/java/com/example/web/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Order-API/src/main/java/com/example/web/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order-API/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Order-API/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order-API/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Order-API/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order-API/src/main/resources/static/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Order-API/src/main/resources/static/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order-API/src/main/resources/templates/hello.html" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Order-API/src/main/resources/templates/hello.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order-API/src/main/resources/templates/user/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Order-API/src/main/resources/templates/user/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order-API/src/main/resources/templates/user/userAdd.html" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Order-API/src/main/resources/templates/user/userAdd.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order-API/src/main/resources/templates/user/userEdit.html" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Order-API/src/main/resources/templates/user/userEdit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Product-API/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Product-API/.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Product-API/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Product-API/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Product-API/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Product-API/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Product-API/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Product-API/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Product-API/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Product-API/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Product-API/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Product-API/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Product-API/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Product-API/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Product-API/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Product-API/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Product-API/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Product-API/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Product-API/src/main/java/com/example/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Product-API/src/main/java/com/example/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Product-API/src/main/java/com/example/MyBatisThymeleafApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Product-API/src/main/java/com/example/MyBatisThymeleafApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Product-API/src/main/java/com/example/domain/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Product-API/src/main/java/com/example/domain/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Product-API/src/main/java/com/example/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Product-API/src/main/java/com/example/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Product-API/src/main/java/com/example/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Product-API/src/main/java/com/example/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Product-API/src/main/java/com/example/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Product-API/src/main/java/com/example/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Product-API/src/main/java/com/example/web/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Product-API/src/main/java/com/example/web/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Product-API/src/main/java/com/example/web/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Product-API/src/main/java/com/example/web/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Product-API/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Product-API/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Product-API/src/main/resources/com/example/mappers/UserMapper" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Product-API/src/main/resources/com/example/mappers/UserMapper" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Product-API/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Product-API/src/main/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Product-API/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Product-API/src/main/resources/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Product-API/src/main/resources/static/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Product-API/src/main/resources/static/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Product-API/src/main/resources/templates/hello.html" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Product-API/src/main/resources/templates/hello.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Product-API/src/main/resources/templates/user/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Product-API/src/main/resources/templates/user/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Product-API/src/main/resources/templates/user/userAdd.html" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Product-API/src/main/resources/templates/user/userAdd.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Product-API/src/main/resources/templates/user/userEdit.html" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Product-API/src/main/resources/templates/user/userEdit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Security-API/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Security-API/.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Security-API/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Security-API/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Security-API/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Security-API/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Security-API/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Security-API/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Security-API/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Security-API/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Security-API/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Security-API/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Security-API/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Security-API/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Security-API/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Security-API/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Security-API/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Security-API/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Security-API/src/main/java/com/example/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Security-API/src/main/java/com/example/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Security-API/src/main/java/com/example/MyBatisThymeleafApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Security-API/src/main/java/com/example/MyBatisThymeleafApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Security-API/src/main/java/com/example/domain/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Security-API/src/main/java/com/example/domain/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Security-API/src/main/java/com/example/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Security-API/src/main/java/com/example/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Security-API/src/main/java/com/example/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Security-API/src/main/java/com/example/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Security-API/src/main/java/com/example/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Security-API/src/main/java/com/example/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Security-API/src/main/java/com/example/web/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Security-API/src/main/java/com/example/web/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Security-API/src/main/java/com/example/web/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Security-API/src/main/java/com/example/web/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Security-API/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Security-API/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Security-API/src/main/resources/com/example/mappers/UserMapper" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Security-API/src/main/resources/com/example/mappers/UserMapper" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Security-API/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Security-API/src/main/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Security-API/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Security-API/src/main/resources/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Security-API/src/main/resources/static/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Security-API/src/main/resources/static/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Security-API/src/main/resources/templates/hello.html" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Security-API/src/main/resources/templates/hello.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Security-API/src/main/resources/templates/user/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Security-API/src/main/resources/templates/user/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Security-API/src/main/resources/templates/user/userAdd.html" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Security-API/src/main/resources/templates/user/userAdd.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Security-API/src/main/resources/templates/user/userEdit.html" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Security-API/src/main/resources/templates/user/userEdit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/suggestions/Java-SpringBoot-Kafka-Consumer/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Suggestions-API/Java-SpringBoot-Kafka-Consumer/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/suggestions/Java-SpringBoot-Kafka-Consumer/com.intelixcloudmessenger.producer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Suggestions-API/Java-SpringBoot-Kafka-Consumer/com.intelixcloudmessenger.producer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/suggestions/Java-SpringBoot-Kafka-Consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Suggestions-API/Java-SpringBoot-Kafka-Consumer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/suggestions/Java-SpringBoot-Kafka-Consumer/src/main/java/com/intelixcloudmessenger/producer/CassandraConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Suggestions-API/Java-SpringBoot-Kafka-Consumer/src/main/java/com/intelixcloudmessenger/producer/CassandraConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/suggestions/Java-SpringBoot-Kafka-Consumer/src/main/java/com/intelixcloudmessenger/producer/KafkaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Suggestions-API/Java-SpringBoot-Kafka-Consumer/src/main/java/com/intelixcloudmessenger/producer/KafkaConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/suggestions/Java-SpringBoot-Kafka-Consumer/src/main/java/com/intelixcloudmessenger/producer/ProducerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Suggestions-API/Java-SpringBoot-Kafka-Consumer/src/main/java/com/intelixcloudmessenger/producer/ProducerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/suggestions/Java-SpringBoot-Kafka-Consumer/src/main/java/com/intelixcloudmessenger/producer/domain/Petition.java" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Suggestions-API/Java-SpringBoot-Kafka-Consumer/src/main/java/com/intelixcloudmessenger/producer/domain/Petition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/suggestions/Java-SpringBoot-Kafka-Consumer/src/main/java/com/intelixcloudmessenger/producer/domain/messenger/MailMessenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Suggestions-API/Java-SpringBoot-Kafka-Consumer/src/main/java/com/intelixcloudmessenger/producer/domain/messenger/MailMessenger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/suggestions/Java-SpringBoot-Kafka-Consumer/src/main/java/com/intelixcloudmessenger/producer/domain/messenger/MailPetition.java" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Suggestions-API/Java-SpringBoot-Kafka-Consumer/src/main/java/com/intelixcloudmessenger/producer/domain/messenger/MailPetition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/suggestions/Java-SpringBoot-Kafka-Consumer/src/main/java/com/intelixcloudmessenger/producer/domain/messenger/SmsMensseger.java" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Suggestions-API/Java-SpringBoot-Kafka-Consumer/src/main/java/com/intelixcloudmessenger/producer/domain/messenger/SmsMensseger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/suggestions/Java-SpringBoot-Kafka-Consumer/src/main/java/com/intelixcloudmessenger/producer/domain/messenger/SmsPetition.java" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Suggestions-API/Java-SpringBoot-Kafka-Consumer/src/main/java/com/intelixcloudmessenger/producer/domain/messenger/SmsPetition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/suggestions/Java-SpringBoot-Kafka-Consumer/src/main/java/com/intelixcloudmessenger/producer/kafka/PetitionConsumerKafKa.java" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Suggestions-API/Java-SpringBoot-Kafka-Consumer/src/main/java/com/intelixcloudmessenger/producer/kafka/PetitionConsumerKafKa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/suggestions/Java-SpringBoot-Kafka-Consumer/src/main/java/com/intelixcloudmessenger/producer/kafka/PetitionProducerKafka.java" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Suggestions-API/Java-SpringBoot-Kafka-Consumer/src/main/java/com/intelixcloudmessenger/producer/kafka/PetitionProducerKafka.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/suggestions/Java-SpringBoot-Kafka-Consumer/src/main/java/com/intelixcloudmessenger/producer/repository/PetitionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Suggestions-API/Java-SpringBoot-Kafka-Consumer/src/main/java/com/intelixcloudmessenger/producer/repository/PetitionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/suggestions/Java-SpringBoot-Kafka-Consumer/src/main/java/com/intelixcloudmessenger/producer/service/PetitionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Suggestions-API/Java-SpringBoot-Kafka-Consumer/src/main/java/com/intelixcloudmessenger/producer/service/PetitionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/suggestions/Java-SpringBoot-Kafka-Consumer/src/main/java/com/intelixcloudmessenger/producer/service/impl/PetitionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Suggestions-API/Java-SpringBoot-Kafka-Consumer/src/main/java/com/intelixcloudmessenger/producer/service/impl/PetitionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/suggestions/Java-SpringBoot-Kafka-Consumer/src/main/java/com/intelixcloudmessenger/producer/web/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Suggestions-API/Java-SpringBoot-Kafka-Consumer/src/main/java/com/intelixcloudmessenger/producer/web/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/suggestions/Java-SpringBoot-Kafka-Consumer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Suggestions-API/Java-SpringBoot-Kafka-Consumer/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/suggestions/Java-SpringBoot-Kafka-Producer/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Suggestions-API/Java-SpringBoot-Kafka-Producer/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/suggestions/Java-SpringBoot-Kafka-Producer/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Suggestions-API/Java-SpringBoot-Kafka-Producer/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/suggestions/Java-SpringBoot-Kafka-Producer/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Suggestions-API/Java-SpringBoot-Kafka-Producer/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/suggestions/Java-SpringBoot-Kafka-Producer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Suggestions-API/Java-SpringBoot-Kafka-Producer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/suggestions/Java-SpringBoot-Kafka-Producer/src/main/java/com/intelixcloudmessenger/ws/ApiGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Suggestions-API/Java-SpringBoot-Kafka-Producer/src/main/java/com/intelixcloudmessenger/ws/ApiGatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/suggestions/Java-SpringBoot-Kafka-Producer/src/main/java/com/intelixcloudmessenger/ws/KafkaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Suggestions-API/Java-SpringBoot-Kafka-Producer/src/main/java/com/intelixcloudmessenger/ws/KafkaConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/suggestions/Java-SpringBoot-Kafka-Producer/src/main/java/com/intelixcloudmessenger/ws/domain/MailMessenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Suggestions-API/Java-SpringBoot-Kafka-Producer/src/main/java/com/intelixcloudmessenger/ws/domain/MailMessenger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/suggestions/Java-SpringBoot-Kafka-Producer/src/main/java/com/intelixcloudmessenger/ws/domain/MailPetition.java" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Suggestions-API/Java-SpringBoot-Kafka-Producer/src/main/java/com/intelixcloudmessenger/ws/domain/MailPetition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/suggestions/Java-SpringBoot-Kafka-Producer/src/main/java/com/intelixcloudmessenger/ws/domain/SmsMensseger.java" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Suggestions-API/Java-SpringBoot-Kafka-Producer/src/main/java/com/intelixcloudmessenger/ws/domain/SmsMensseger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/suggestions/Java-SpringBoot-Kafka-Producer/src/main/java/com/intelixcloudmessenger/ws/domain/SmsPetition.java" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Suggestions-API/Java-SpringBoot-Kafka-Producer/src/main/java/com/intelixcloudmessenger/ws/domain/SmsPetition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/suggestions/Java-SpringBoot-Kafka-Producer/src/main/java/com/intelixcloudmessenger/ws/kafka/PetitionProducerKafka.java" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Suggestions-API/Java-SpringBoot-Kafka-Producer/src/main/java/com/intelixcloudmessenger/ws/kafka/PetitionProducerKafka.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/suggestions/Java-SpringBoot-Kafka-Producer/src/main/java/com/intelixcloudmessenger/ws/service/PetitionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Suggestions-API/Java-SpringBoot-Kafka-Producer/src/main/java/com/intelixcloudmessenger/ws/service/PetitionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/suggestions/Java-SpringBoot-Kafka-Producer/src/main/java/com/intelixcloudmessenger/ws/service/impl/PetitionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Suggestions-API/Java-SpringBoot-Kafka-Producer/src/main/java/com/intelixcloudmessenger/ws/service/impl/PetitionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/suggestions/Java-SpringBoot-Kafka-Producer/src/main/java/com/intelixcloudmessenger/ws/web/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Suggestions-API/Java-SpringBoot-Kafka-Producer/src/main/java/com/intelixcloudmessenger/ws/web/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/suggestions/Java-SpringBoot-Kafka-Producer/src/main/java/com/intelixcloudmessenger/ws/web/PetitionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Suggestions-API/Java-SpringBoot-Kafka-Producer/src/main/java/com/intelixcloudmessenger/ws/web/PetitionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/suggestions/Java-SpringBoot-Kafka-Producer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Suggestions-API/Java-SpringBoot-Kafka-Producer/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/suggestions/Java-SpringBoot-Kafka-Producer/src/test/java/com/intelixcloudmessenger/ws/TestMainVerticle.java" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ECommerce-Suggestions-API/Java-SpringBoot-Kafka-Producer/src/test/java/com/intelixcloudmessenger/ws/TestMainVerticle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Services/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Services/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Services/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Services/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/Services/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/Services/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Services/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Services/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -169,13 +253,7 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="Java-SpringBoot-Example" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Java-SpringBoot-Example" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
+                <item name="Services" type="2d1252cf:ModuleNode" />
               </path>
             </expand>
             <select />
@@ -191,90 +269,47 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1fh8UVJrNVP0zeNlJOGCzU17iPR" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Shell-Script-Demo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Web-App" />
     <property name="not.eligible.for.single.variant.sync" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.13818479" />
     <property name="project.structure.side.proportion" value="0.21980886" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
-  <component name="RunManager">
-    <configuration name="Java-SpringBoot-Example [build]" type="GradleRunConfiguration" factoryName="Gradle">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <module name="Java-SpringBoot-Example" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
-      <module name="Java-SpringBoot-Example" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Web-App" />
+      <recent name="$PROJECT_DIR$/Mobile-App" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Services" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -288,29 +323,46 @@
       <updated>1596658983784</updated>
       <workItem from="1596659015008" duration="921000" />
       <workItem from="1596659991614" duration="159000" />
-      <workItem from="1596660158846" duration="531000" />
+      <workItem from="1596660158846" duration="1018000" />
+      <workItem from="1599889819030" duration="1129000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="273" y="57" width="800" height="675" key="#Docker" timestamp="1596661108675">
+      <screen x="0" y="25" width="1366" height="743" />
+    </state>
+    <state x="273" y="57" width="800" height="675" key="#Docker/0.25.1366.743@0.25.1366.743" timestamp="1596661108675" />
+    <state x="382" y="25" width="592" height="741" key="#Order-API/Dockerfile" timestamp="1596661132058">
+      <screen x="0" y="25" width="1366" height="743" />
+    </state>
+    <state x="382" y="25" width="592" height="741" key="#Order-API/Dockerfile/0.25.1366.743@0.25.1366.743" timestamp="1596661132058" />
+    <state x="382" y="25" width="592" height="741" key="#Product-API/Dockerfile" timestamp="1596661127459">
+      <screen x="0" y="25" width="1366" height="743" />
+    </state>
+    <state x="382" y="25" width="592" height="741" key="#Product-API/Dockerfile/0.25.1366.743@0.25.1366.743" timestamp="1596661127459" />
     <state x="278" y="58" width="800" height="675" key="#Project_Structure" timestamp="1596659574796">
       <screen x="0" y="25" width="1366" height="743" />
     </state>
     <state x="278" y="58" width="800" height="675" key="#Project_Structure/0.25.1366.743@0.25.1366.743" timestamp="1596659574796" />
-    <state x="382" y="25" width="592" height="741" key="#Security-API/Dockerfile" timestamp="1596660172236">
+    <state x="382" y="25" width="592" height="741" key="#Security-API/Dockerfile" timestamp="1596661113732">
       <screen x="0" y="25" width="1366" height="743" />
     </state>
-    <state x="382" y="25" width="592" height="741" key="#Security-API/Dockerfile/0.25.1366.743@0.25.1366.743" timestamp="1596660172236" />
+    <state x="382" y="25" width="592" height="741" key="#Security-API/Dockerfile/0.25.1366.743@0.25.1366.743" timestamp="1596661113732" />
     <state x="382" y="114" width="592" height="562" key="#app" timestamp="1596659159185">
       <screen x="0" y="25" width="1366" height="743" />
     </state>
     <state x="382" y="114" width="592" height="562" key="#app/0.25.1366.743@0.25.1366.743" timestamp="1596659159185" />
-    <state x="141" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596659706409">
-      <screen x="0" y="25" width="1366" height="743" />
+    <state x="141" y="53" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599890826474">
+      <screen x="0" y="24" width="1366" height="744" />
     </state>
+    <state x="141" y="53" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.24.1366.744@0.24.1366.744" timestamp="1599890826474" />
     <state x="141" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1366.743@0.25.1366.743" timestamp="1596659706409" />
     <state x="300" y="89" width="756" height="612" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1596658905678">
       <screen x="0" y="25" width="1366" height="743" />
@@ -320,29 +372,30 @@
       <screen x="0" y="25" width="1366" height="743" />
     </state>
     <state x="466" y="154" width="424" height="482" key="FileChooserDialogImpl/0.25.1366.743@0.25.1366.743" timestamp="1596660192947" />
-    <state width="1324" height="350" key="GridCell.Tab.0.bottom" timestamp="1596660713728">
+    <state width="1324" height="350" key="GridCell.Tab.0.bottom" timestamp="1596661025255">
       <screen x="0" y="25" width="1366" height="743" />
     </state>
-    <state width="1324" height="350" key="GridCell.Tab.0.bottom/0.25.1366.743@0.25.1366.743" timestamp="1596660713728" />
-    <state width="1324" height="350" key="GridCell.Tab.0.center" timestamp="1596660713728">
+    <state width="1324" height="350" key="GridCell.Tab.0.bottom/0.25.1366.743@0.25.1366.743" timestamp="1596661025255" />
+    <state width="1324" height="350" key="GridCell.Tab.0.center" timestamp="1596661025224">
       <screen x="0" y="25" width="1366" height="743" />
     </state>
-    <state width="1324" height="350" key="GridCell.Tab.0.center/0.25.1366.743@0.25.1366.743" timestamp="1596660713728" />
-    <state width="1324" height="350" key="GridCell.Tab.0.left" timestamp="1596660713727">
+    <state width="1324" height="350" key="GridCell.Tab.0.center/0.25.1366.743@0.25.1366.743" timestamp="1596661025224" />
+    <state width="1324" height="350" key="GridCell.Tab.0.left" timestamp="1596661025197">
       <screen x="0" y="25" width="1366" height="743" />
     </state>
-    <state width="1324" height="350" key="GridCell.Tab.0.left/0.25.1366.743@0.25.1366.743" timestamp="1596660713727" />
-    <state width="1324" height="350" key="GridCell.Tab.0.right" timestamp="1596660713728">
+    <state width="1324" height="350" key="GridCell.Tab.0.left/0.25.1366.743@0.25.1366.743" timestamp="1596661025197" />
+    <state width="1324" height="350" key="GridCell.Tab.0.right" timestamp="1596661025254">
       <screen x="0" y="25" width="1366" height="743" />
     </state>
-    <state width="1324" height="350" key="GridCell.Tab.0.right/0.25.1366.743@0.25.1366.743" timestamp="1596660713728" />
+    <state width="1324" height="350" key="GridCell.Tab.0.right/0.25.1366.743@0.25.1366.743" timestamp="1596661025254" />
     <state x="266" y="142" width="824" height="506" key="IDE.errors.dialog" timestamp="1596658914525">
       <screen x="0" y="25" width="1366" height="743" />
     </state>
     <state x="266" y="142" width="824" height="506" key="IDE.errors.dialog/0.25.1366.743@0.25.1366.743" timestamp="1596658914525" />
-    <state x="30" y="25" width="1336" height="741" key="SettingsEditor" timestamp="1596660692477">
-      <screen x="0" y="25" width="1366" height="743" />
+    <state x="30" y="24" width="1336" height="741" key="SettingsEditor" timestamp="1599890510756">
+      <screen x="0" y="24" width="1366" height="744" />
     </state>
+    <state x="30" y="24" key="SettingsEditor/0.24.1366.744@0.24.1366.744" timestamp="1599890510756" />
     <state x="30" y="25" width="1336" height="741" key="SettingsEditor/0.25.1366.743@0.25.1366.743" timestamp="1596660692477" />
     <state x="347" y="176" width="672" height="677" key="run.anything.popup" timestamp="1596659719177">
       <screen x="0" y="25" width="1366" height="743" />
