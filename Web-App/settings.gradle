@@ -1,0 +1,5 @@
+rootProject.name = 'Services'
+include 'ECommerce-Order-API'
+include 'ECommerce-Product-API'
+include 'ECommerce-Security-API'
+
