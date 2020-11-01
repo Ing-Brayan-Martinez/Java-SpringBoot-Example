@@ -1,4 +1,4 @@
-rootProject.name = 'Services'
+rootProject.name = 'Java-ECommerce-Architecture-Example'
 include 'ECommerce-Order-API'
 include 'ECommerce-Product-API'
 include 'ECommerce-Security-API'
